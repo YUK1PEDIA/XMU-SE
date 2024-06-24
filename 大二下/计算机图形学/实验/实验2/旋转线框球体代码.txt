@@ -1,0 +1,233 @@
+#include <GL/glut.h>
+#include <cmath>
+
+#define DEG_TO_RAD 0.017453 // 角度到弧度的转换系数
+const GLfloat RR = 5.0; // 相机半径
+GLfloat beta = 0; // 相机角度
+GLfloat cubeAngle = 0; // 球体旋转角度
+
+GLfloat cameraPos[] = { 0.0, 0.0, 10.0 }; // 相机位置
+GLfloat cameraFront[] = { 0.0, 0.0, -1.0 }; // 相机前方向
+GLfloat cameraUp[] = { 0.0, 1.0, 0.0 }; // 相机上方向
+
+bool lockCamera = false; // 锁定相机移动和旋转
+
+void init(void)
+{
+    glClearColor(0.0, 0.0, 0.0, 0.0); // 设置清除颜色为黑色
+    glColor3f(1.0, 1.0, 1.0); // 设置绘制颜色为白色
+    glEnable(GL_DEPTH_TEST); // 开启深度测试，用于前后面的遮挡关系判断
+}
+
+// 绘制线框球体的函数
+void drawSphereWireframe(float radius, int slices, int stacks)
+{
+    float phi, theta;
+    float x, y, z;
+    float stepPhi = 360.0f / slices;
+    float stepTheta = 180.0f / stacks;
+
+    // 绘制纵向线条
+    glBegin(GL_LINES);
+    for (phi = -180; phi < 180; phi += stepPhi)
+    {
+        for (theta = -90; theta <= 90; theta += stepTheta)
+        {
+            // 计算线条的两个端点
+            x = radius * cos(theta * DEG_TO_RAD) * cos(phi * DEG_TO_RAD);
+            y = radius * sin(theta * DEG_TO_RAD);
+            z = radius * cos(theta * DEG_TO_RAD) * sin(phi * DEG_TO_RAD);
+
+            glVertex3f(x, y, z);
+
+            x = radius * cos((theta + stepTheta) * DEG_TO_RAD) * cos(phi * DEG_TO_RAD);
+            y = radius * sin((theta + stepTheta) * DEG_TO_RAD);
+            z = radius * cos((theta + stepTheta) * DEG_TO_RAD) * sin(phi * DEG_TO_RAD);
+
+            glVertex3f(x, y, z);
+        }
+    }
+    glEnd();
+
+    // 绘制横向线条
+    glBegin(GL_LINES);
+    for (theta = -90; theta <= 90; theta += stepTheta)
+    {
+        for (phi = -180; phi < 180; phi += stepPhi)
+        {
+            // 计算线条的两个端点
+            x = radius * cos(theta * DEG_TO_RAD) * cos(phi * DEG_TO_RAD);
+            y = radius * sin(theta * DEG_TO_RAD);
+            z = radius * cos(theta * DEG_TO_RAD) * sin(phi * DEG_TO_RAD);
+
+            glVertex3f(x, y, z);
+
+            x = radius * cos(theta * DEG_TO_RAD) * cos((phi + stepPhi) * DEG_TO_RAD);
+            y = radius * sin(theta * DEG_TO_RAD);
+            z = radius * cos(theta * DEG_TO_RAD) * sin((phi + stepPhi) * DEG_TO_RAD);
+
+            glVertex3f(x, y, z);
+        }
+    }
+    glEnd();
+}
+
+void display(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // 清除颜色缓冲区和深度缓冲区
+
+    glMatrixMode(GL_MODELVIEW); // 切换到模型视图矩阵模式
+    glLoadIdentity(); // 重置模型视图矩阵
+
+    if (!lockCamera)
+    {
+        gluLookAt(cameraPos[0], cameraPos[1], cameraPos[2], // 设置相机位置和朝向
+            cameraPos[0] + cameraFront[0], cameraPos[1] + cameraFront[1], cameraPos[2] + cameraFront[2],
+            cameraUp[0], cameraUp[1], cameraUp[2]);
+    }
+
+    glPushMatrix();
+    glRotatef(30.0, 0.0, 0.0, 1.0); // 将球体绕y轴旋转30度，使其横向倾斜
+    glRotatef(cubeAngle, 0.0, 1.0, 0.0); // 绕y轴旋转
+    glColor3f(1.0, 0.0, 0.0); // 设置颜色为红色
+    drawSphereWireframe(2.0, 36, 18); // 绘制线框球体
+    glPopMatrix();
+
+    glutSwapBuffers(); // 交换前后缓冲区
+}
+
+
+
+void reshape(int w, int h)
+{
+    glViewport(0, 0, (GLsizei)w, (GLsizei)h); // 设置视口大小
+
+    glMatrixMode(GL_PROJECTION); // 切换到投影矩阵模式
+    glLoadIdentity(); // 重置投影矩阵
+    gluPerspective(45.0, (GLfloat)w / (GLfloat)h, 0.1, 100.0); // 设置透视投影
+
+    glMatrixMode(GL_MODELVIEW); // 切换回模型视图矩阵模式
+}
+
+void idlefunc()
+{
+    cubeAngle += 0.5; // 每帧旋转角度增加
+    if (cubeAngle > 360)
+        cubeAngle -= 360;
+
+    glutPostRedisplay(); // 标记窗口需要重新绘制
+}
+
+void keyboard(unsigned char key, int x, int y)
+{
+    float cameraSpeed = 0.1; // 相机移动速度
+
+    switch (key)
+    {
+    case 'w':
+        // 向前移动
+        cameraPos[0] += cameraSpeed * cameraFront[0];
+        cameraPos[2] += cameraSpeed * cameraFront[2];
+        break;
+    case 's':
+        // 向后移动
+        cameraPos[0] -= cameraSpeed * cameraFront[0];
+        cameraPos[2] -= cameraSpeed * cameraFront[2];
+        break;
+    case 'a':
+        // 向左移动
+        cameraPos[0] -= cameraSpeed * (cameraFront[2]);
+        cameraPos[2] += cameraSpeed * (cameraFront[0]);
+        break;
+    case 'd':
+        // 向右移动
+        cameraPos[0] += cameraSpeed * (cameraFront[2]);
+        cameraPos[2] -= cameraSpeed * (cameraFront[0]);
+        break;
+    case 'q':
+        // 上升
+        cameraPos[1] += cameraSpeed;
+        break;
+    case 'e':
+        // 下降
+        cameraPos[1] -= cameraSpeed;
+        break;
+    case 'L':
+        // 锁定/解锁相机移动和旋转
+        lockCamera = !lockCamera;
+        break;
+    case 27:
+        // 退出程序
+        exit(0);
+        break;
+    }
+}
+
+void mouse(int x, int y)
+{
+    static int lastX = -1;
+    static int lastY = -1;
+
+    if (lastX == -1 || lastY == -1)
+    {
+        lastX = x;
+        lastY = y;
+        return;
+    }
+
+    float sensitivity = 0.05; // 鼠标灵敏度
+    float deltaX = (x - lastX) * sensitivity;
+    float deltaY = (lastY - y) * sensitivity; // y轴反向
+
+    lastX = x;
+    lastY = y;
+
+    float yaw = deltaX; // 水平旋转角度
+    float pitch = deltaY; // 垂直旋转角度
+
+    // 更新相机的朝向
+    float yawRad = DEG_TO_RAD * yaw;
+    float pitchRad = DEG_TO_RAD * pitch;
+
+    GLfloat newX = cameraFront[0] * cos(yawRad) + cameraFront[2] * sin(yawRad);
+    GLfloat newY = cameraFront[1];
+    GLfloat newZ = -cameraFront[0] * sin(yawRad) + cameraFront[2] * cos(yawRad);
+    cameraFront[0] = newX;
+    cameraFront[1] = newY;
+    cameraFront[2] = newZ;
+
+    // 使用欧拉角限制俯仰角度
+    if ((cameraFront[1] > 0.99 && pitch > 0) || (cameraFront[1] < -0.99 && pitch < 0))
+        return;
+
+    GLfloat pitchAxis[] = { 1.0, 0.0, 0.0 }; // 绕X轴旋转
+    GLfloat newCameraFront[3];
+    GLfloat c = cos(pitchRad);
+    GLfloat s = sin(pitchRad);
+    newCameraFront[0] = cameraFront[0] * c + (1 - c) * pitchAxis[0] + cameraFront[1] * s;
+    newCameraFront[1] = cameraFront[1] * c - (1 - c) * pitchAxis[1] - cameraFront[0] * s;
+    newCameraFront[2] = cameraFront[2] * c + (1 - c) * pitchAxis[2];
+
+    // 更新相机的朝向
+    for (int i = 0; i < 3; ++i)
+        cameraFront[i] = newCameraFront[i];
+
+    glutPostRedisplay(); // 标记窗口需要重新绘制
+}
+
+int main(int argc, char** argv)
+{
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH); // 设置显示模式
+    glutInitWindowSize(500, 500); // 设置窗口大小
+    glutInitWindowPosition(100, 100); // 设置窗口位置
+    glutCreateWindow(argv[0]); // 创建窗口
+    init(); // 初始化
+    glutDisplayFunc(display); // 注册显示回调函数
+    glutReshapeFunc(reshape); // 注册窗口大小变化回调函数
+    glutIdleFunc(idlefunc); // 注册空闲回调函数
+    glutKeyboardFunc(keyboard); // 注册键盘回调函数
+    glutPassiveMotionFunc(mouse); // 注册鼠标移动回调函数
+    glutMainLoop(); // 进入主循环
+    return 0;
+}
