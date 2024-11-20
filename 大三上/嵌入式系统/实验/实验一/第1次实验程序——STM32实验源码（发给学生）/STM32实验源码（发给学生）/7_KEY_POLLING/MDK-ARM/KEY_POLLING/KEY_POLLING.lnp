@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"key_polling\startup_stm32f407xx.o"
+"key_polling\main.o"
+"key_polling\gpio.o"
+"key_polling\usart.o"
+"key_polling\stm32f4xx_it.o"
+"key_polling\stm32f4xx_hal_msp.o"
+"key_polling\stm32f4xx_hal_tim.o"
+"key_polling\stm32f4xx_hal_tim_ex.o"
+"key_polling\stm32f4xx_hal_uart.o"
+"key_polling\stm32f4xx_hal_rcc.o"
+"key_polling\stm32f4xx_hal_rcc_ex.o"
+"key_polling\stm32f4xx_hal_flash.o"
+"key_polling\stm32f4xx_hal_flash_ex.o"
+"key_polling\stm32f4xx_hal_flash_ramfunc.o"
+"key_polling\stm32f4xx_hal_gpio.o"
+"key_polling\stm32f4xx_hal_dma_ex.o"
+"key_polling\stm32f4xx_hal_dma.o"
+"key_polling\stm32f4xx_hal_pwr.o"
+"key_polling\stm32f4xx_hal_pwr_ex.o"
+"key_polling\stm32f4xx_hal_cortex.o"
+"key_polling\stm32f4xx_hal.o"
+"key_polling\stm32f4xx_hal_exti.o"
+"key_polling\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "KEY_POLLING\KEY_POLLING.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KEY_POLLING.map" -o KEY_POLLING\KEY_POLLING.axf

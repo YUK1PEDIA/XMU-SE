@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"realy\startup_stm32f407xx.o"
+"realy\main.o"
+"realy\gpio.o"
+"realy\usart.o"
+"realy\stm32f4xx_it.o"
+"realy\stm32f4xx_hal_msp.o"
+"realy\stm32f4xx_hal_tim.o"
+"realy\stm32f4xx_hal_tim_ex.o"
+"realy\stm32f4xx_hal_uart.o"
+"realy\stm32f4xx_hal_rcc.o"
+"realy\stm32f4xx_hal_rcc_ex.o"
+"realy\stm32f4xx_hal_flash.o"
+"realy\stm32f4xx_hal_flash_ex.o"
+"realy\stm32f4xx_hal_flash_ramfunc.o"
+"realy\stm32f4xx_hal_gpio.o"
+"realy\stm32f4xx_hal_dma_ex.o"
+"realy\stm32f4xx_hal_dma.o"
+"realy\stm32f4xx_hal_pwr.o"
+"realy\stm32f4xx_hal_pwr_ex.o"
+"realy\stm32f4xx_hal_cortex.o"
+"realy\stm32f4xx_hal.o"
+"realy\stm32f4xx_hal_exti.o"
+"realy\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Realy\Realy.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Realy.map" -o Realy\Realy.axf

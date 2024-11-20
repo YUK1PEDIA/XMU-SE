@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"systick_led\startup_stm32f407xx.o"
+"systick_led\main.o"
+"systick_led\gpio.o"
+"systick_led\stm32f4xx_it.o"
+"systick_led\stm32f4xx_hal_msp.o"
+"systick_led\stm32f4xx_hal_tim.o"
+"systick_led\stm32f4xx_hal_tim_ex.o"
+"systick_led\stm32f4xx_hal_rcc.o"
+"systick_led\stm32f4xx_hal_rcc_ex.o"
+"systick_led\stm32f4xx_hal_flash.o"
+"systick_led\stm32f4xx_hal_flash_ex.o"
+"systick_led\stm32f4xx_hal_flash_ramfunc.o"
+"systick_led\stm32f4xx_hal_gpio.o"
+"systick_led\stm32f4xx_hal_dma_ex.o"
+"systick_led\stm32f4xx_hal_dma.o"
+"systick_led\stm32f4xx_hal_pwr.o"
+"systick_led\stm32f4xx_hal_pwr_ex.o"
+"systick_led\stm32f4xx_hal_cortex.o"
+"systick_led\stm32f4xx_hal.o"
+"systick_led\stm32f4xx_hal_exti.o"
+"systick_led\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Systick_Led\Systick_Led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Systick_Led.map" -o Systick_Led\Systick_Led.axf
