@@ -1,0 +1,401 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1732948750531,85,Products,200,,线程组 1-6,text,true,,1465,262,9,9,http://192.168.9.198:8080/products?name=龙嫂香菇鸡肉米线&type=auto,84,0,18
+1732948750536,95,Products,200,,线程组 1-4,text,true,,1773,217,9,9,http://192.168.9.198:8080/products?name=龙须面&type=auto,95,0,13
+1732948750528,117,Products,200,,线程组 1-5,text,true,,1421,244,10,10,http://192.168.9.198:8080/products?name=龙嫂麻辣米线&type=auto,117,0,21
+1732948750531,115,Products,200,,线程组 1-3,text,true,,1761,253,10,10,http://192.168.9.198:8080/products?name=龟苓膏（芦荟）&type=auto,115,0,18
+1732948750527,92,Products,500,,线程组 1-1,text,false,Test failed: code expected to contain /200/,253,201,9,9,http://192.168.9.198:8080/products?name=productName&type=auto,91,0,22
+1732948750551,106,Products,200,,线程组 1-7,text,true,,2080,253,6,6,http://192.168.9.198:8080/products?name=龙嫂香菇鸡米线&type=auto,106,0,3
+1732948750528,131,Products,200,,线程组 1-2,text,true,,999,253,5,5,http://192.168.9.198:8080/products?name=龟苓膏（蜂蜜）&type=auto,131,0,21
+1732948750599,76,Products,200,,线程组 1-9,text,true,,1204,271,4,4,http://192.168.9.198:8080/products?name=龙嫂酸麻辣牛肉米线&type=auto,76,0,2
+1732948750575,101,Products,200,,线程组 1-8,text,true,,1733,244,3,3,http://192.168.9.198:8080/products?name=龙嫂风味肥肠&type=auto,101,0,3
+1732948750642,35,Products,200,,线程组 1-10,text,true,,1597,244,2,2,http://192.168.9.198:8080/products?name=龙嫂酸辣米线&type=auto,35,0,5
+1732948750649,39,Products,200,,线程组 1-11,text,true,,1810,262,1,1,http://192.168.9.198:8080/products?name=龙嫂酸辣牛肉米线&type=auto,39,0,2
+1732948750693,11,Products,500,,线程组 1-12,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=龙嫂红烧牛肉米线&type=auto,11,0,1
+1732948750716,10,Products,500,,线程组 1-13,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=龙嫂红烧牛肉米线&type=auto,10,0,1
+1732948750728,15,Products,200,,线程组 1-14,text,true,,404,253,1,1,http://192.168.9.198:8080/products?name=龙嫂米线海虾仁&type=auto,15,0,1
+1732948750750,16,Products,200,,线程组 1-15,text,true,,1319,290,1,1,http://192.168.9.198:8080/products?name=龙嫂桶装米线（各种口味)&type=auto,16,0,1
+1732948750769,16,Products,200,,线程组 1-16,text,true,,1486,247,1,1,http://192.168.9.198:8080/products?name=龙大绿豆宽粉160&type=auto,16,0,2
+1732948750812,17,Products,200,,线程组 1-17,text,true,,1609,244,2,2,http://192.168.9.198:8080/products?name=龙大精制红薯&type=auto,17,0,1
+1732948750819,19,Products,200,,线程组 1-18,text,true,,2202,253,2,2,http://192.168.9.198:8080/products?name=龙大夫藏秘牙膏&type=auto,19,0,2
+1732948750837,17,Products,200,,线程组 1-19,text,true,,1771,235,1,1,http://192.168.9.198:8080/products?name=龙大夫牙膏&type=auto,17,0,2
+1732948750871,18,Products,200,,线程组 1-20,text,true,,1330,253,2,2,http://192.168.9.198:8080/products?name=龙士达小号方篮&type=auto,18,0,2
+1732948750888,16,Products,200,,线程组 1-21,text,true,,2109,262,2,2,http://192.168.9.198:8080/products?name=龙士达圆型纸巾桶&type=auto,16,0,2
+1732948750897,16,Products,200,,线程组 1-22,text,true,,1646,253,1,1,http://192.168.9.198:8080/products?name=龙士达中号方篮&type=auto,16,0,2
+1732948750921,16,Products,200,,线程组 1-23,text,true,,1450,226,1,1,http://192.168.9.198:8080/products?name=龙佑香米&type=auto,16,0,1
+1732948750947,16,Products,200,,线程组 1-24,text,true,,1030,253,1,1,http://192.168.9.198:8080/products?name=龙亮逍遥胡辣汤&type=auto,16,0,1
+1732948750966,16,Products,200,,线程组 1-25,text,true,,1486,262,1,1,http://192.168.9.198:8080/products?name=龙义和牛肉胡辣汤&type=auto,15,0,1
+1732948750989,16,Products,200,,线程组 1-26,text,true,,1457,254,1,1,http://192.168.9.198:8080/products?name=龙丹金装乳宝2段&type=auto,16,0,2
+1732948751022,15,Products,200,,线程组 1-27,text,true,,1301,254,1,1,http://192.168.9.198:8080/products?name=龙丹金装乳宝1段&type=auto,15,0,1
+1732948751043,15,Products,200,,线程组 1-28,text,true,,1749,227,1,1,http://192.168.9.198:8080/products?name=齿王牙膏7&type=auto,15,0,1
+1732948751069,16,Products,200,,线程组 1-29,text,true,,1770,226,1,1,http://192.168.9.198:8080/products?name=鼎丰白醋&type=auto,16,0,1
+1732948751092,15,Products,200,,线程组 1-30,text,true,,869,262,1,1,http://192.168.9.198:8080/products?name=黛沙独立清洗手液&type=auto,14,0,1
+1732948751117,15,Products,200,,线程组 1-31,text,true,,1325,235,1,1,http://192.168.9.198:8080/products?name=黛沙洗手液&type=auto,15,0,1
+1732948751143,10,Products,500,,线程组 1-32,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=黑金刚巧力&type=auto,10,0,1
+1732948751173,10,Products,500,,线程组 1-33,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=黑金刚巧力&type=auto,10,0,1
+1732948751194,16,Products,200,,线程组 1-34,text,true,,2397,244,1,1,http://192.168.9.198:8080/products?name=黑金刚大蘑头&type=auto,16,0,1
+1732948751221,17,Products,200,,线程组 1-35,text,true,,1925,262,1,1,http://192.168.9.198:8080/products?name=黑金刚咔奇脆巧力&type=auto,17,0,2
+1732948751241,17,Products,200,,线程组 1-36,text,true,,998,244,1,1,http://192.168.9.198:8080/products?name=黑蝙蝠杀虫剂&type=auto,17,0,1
+1732948751265,15,Products,200,,线程组 1-37,text,true,,1301,240,1,1,http://192.168.9.198:8080/products?name=黑胡椒牛肉(200)&type=auto,15,0,1
+1732948751289,16,Products,200,,线程组 1-38,text,true,,1335,253,1,1,http://192.168.9.198:8080/products?name=黑妹野菊花牙膏&type=auto,16,0,1
+1732948751325,16,Products,200,,线程组 1-39,text,true,,1181,253,1,1,http://192.168.9.198:8080/products?name=黑人茶倍健牙膏&type=auto,16,0,1
+1732948751358,16,Products,200,,线程组 1-40,text,true,,1128,226,1,1,http://192.168.9.198:8080/products?name=黑人牙膏&type=auto,16,0,1
+1732948751383,15,Products,200,,线程组 1-41,text,true,,1501,217,2,2,http://192.168.9.198:8080/products?name=黄金豆&type=auto,15,0,1
+1732948751399,14,Products,200,,线程组 1-42,text,true,,1663,235,1,1,http://192.168.9.198:8080/products?name=黄金晴大米&type=auto,14,0,1
+1732948751420,15,Products,200,,线程组 1-43,text,true,,1434,236,1,1,http://192.168.9.198:8080/products?name=黄金晴5公斤&type=auto,15,0,1
+1732948751455,16,Products,200,,线程组 1-44,text,true,,1491,226,1,1,http://192.168.9.198:8080/products?name=黄花什锦&type=auto,16,0,1
+1732948751480,15,Products,200,,线程组 1-45,text,true,,1058,253,2,2,http://192.168.9.198:8080/products?name=黄百界糯米香醋&type=auto,15,0,1
+1732948751495,15,Products,200,,线程组 1-46,text,true,,2353,226,1,1,http://192.168.9.198:8080/products?name=麻辣鱼料&type=auto,15,0,1
+1732948751515,16,Products,200,,线程组 1-47,text,true,,2095,262,1,1,http://192.168.9.198:8080/products?name=麻辣魔法王干脆面&type=auto,16,0,1
+1732948751541,15,Products,200,,线程组 1-48,text,true,,1745,231,1,1,http://192.168.9.198:8080/products?name=麻辣香肠(200)&type=auto,15,0,1
+1732948751565,15,Products,200,,线程组 1-49,text,true,,1735,226,1,1,http://192.168.9.198:8080/products?name=麻辣豆干&type=auto,15,0,1
+1732948751589,16,Products,200,,线程组 1-50,text,true,,1614,231,1,1,http://192.168.9.198:8080/products?name=麻辣肘花(250)&type=auto,16,0,1
+1732948751614,25,Products,200,,线程组 1-51,text,true,,2217,249,2,2,http://192.168.9.198:8080/products?name=麻辣羔羊肉串(450)&type=auto,25,0,1
+1732948751639,18,Products,200,,线程组 1-52,text,true,,2652,249,1,1,http://192.168.9.198:8080/products?name=麻辣羔羊肉串(240)&type=auto,18,0,1
+1732948751664,16,Products,200,,线程组 1-53,text,true,,1297,253,1,1,http://192.168.9.198:8080/products?name=麻辣牛肉胡辣汤&type=auto,15,0,2
+1732948751689,15,Products,200,,线程组 1-54,text,true,,1772,258,1,1,http://192.168.9.198:8080/products?name=麻辣烫火锅底料(200)&type=auto,15,0,1
+1732948751718,15,Products,200,,线程组 1-55,text,true,,1456,235,1,1,http://192.168.9.198:8080/products?name=麦可麦饼干&type=auto,15,0,1
+1732948751739,15,Products,200,,线程组 1-56,text,true,,1168,262,1,1,http://192.168.9.198:8080/products?name=麦乐芙（草莓味）&type=auto,15,0,1
+1732948751764,15,Products,200,,线程组 1-57,text,true,,1773,262,1,1,http://192.168.9.198:8080/products?name=麦乐芙（牛奶味）&type=auto,15,0,1
+1732948751790,15,Products,200,,线程组 1-58,text,true,,1157,262,1,1,http://192.168.9.198:8080/products?name=麦乐芙（抹茶味）&type=auto,15,0,0
+1732948751815,15,Products,200,,线程组 1-59,text,true,,1599,262,1,1,http://192.168.9.198:8080/products?name=麦乐芙（可可味）&type=auto,15,0,1
+1732948751840,16,Products,200,,线程组 1-60,text,true,,991,217,1,1,http://192.168.9.198:8080/products?name=麦丽素&type=auto,16,0,1
+1732948751865,16,Products,200,,线程组 1-61,text,true,,1641,217,1,1,http://192.168.9.198:8080/products?name=鹌鹑蛋&type=auto,16,0,1
+1732948751890,11,Products,500,,线程组 1-62,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=鸳鸯夹心饼干&type=auto,11,0,1
+1732948751916,11,Products,500,,线程组 1-63,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=鸳鸯夹心饼干&type=auto,11,0,1
+1732948751939,10,Products,500,,线程组 1-64,text,false,Test failed: code expected to contain /200/,253,217,1,1,http://192.168.9.198:8080/products?name=鸡蛋面&type=auto,10,0,1
+1732948751976,11,Products,500,,线程组 1-65,text,false,Test failed: code expected to contain /200/,253,217,1,1,http://192.168.9.198:8080/products?name=鸡蛋面&type=auto,10,0,1
+1732948751999,16,Products,200,,线程组 1-66,text,true,,1760,208,1,1,http://192.168.9.198:8080/products?name=鸡脖&type=auto,16,0,1
+1732948752024,16,Products,200,,线程组 1-67,text,true,,1912,244,1,1,http://192.168.9.198:8080/products?name=鸡肉鱼肉米粉&type=auto,15,0,1
+1732948752052,16,Products,200,,线程组 1-68,text,true,,1466,262,1,1,http://192.168.9.198:8080/products?name=鸡翅魔法王干脆面&type=auto,16,0,1
+1732948752078,16,Products,200,,线程组 1-69,text,true,,1596,235,1,1,http://192.168.9.198:8080/products?name=鲜鸡塘汤面&type=auto,16,0,1
+1732948752102,17,Products,200,,线程组 1-70,text,true,,1287,257,1,1,http://192.168.9.198:8080/products?name=鲁花菜籽调和油5000&type=auto,17,0,2
+1732948752137,16,Products,200,,线程组 1-71,text,true,,1775,217,2,2,http://192.168.9.198:8080/products?name=鱿鱼丝&type=auto,16,0,1
+1732948752139,15,Products,200,,线程组 1-72,text,true,,1147,235,1,1,http://192.168.9.198:8080/products?name=鱼肉火腿肠&type=auto,15,0,1
+1732948752164,16,Products,200,,线程组 1-73,text,true,,1614,244,1,1,http://192.168.9.198:8080/products?name=魔法王辣子鸡&type=auto,16,0,1
+1732948752189,10,Products,500,,线程组 1-74,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=魔法王干脆面&type=auto,10,0,1
+1732948752215,9,Products,500,,线程组 1-75,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=魔法王干脆面&type=auto,9,0,1
+1732948752239,9,Products,500,,线程组 1-76,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=魔法王干脆面&type=auto,9,0,1
+1732948752264,10,Products,500,,线程组 1-77,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=魔法王干脆面&type=auto,10,0,1
+1732948752289,16,Products,200,,线程组 1-78,text,true,,2393,253,1,1,http://192.168.9.198:8080/products?name=魔法王巴西烤肉&type=auto,16,0,1
+1732948752314,15,Products,200,,线程组 1-79,text,true,,2534,271,1,1,http://192.168.9.198:8080/products?name=魔法帝国巴西烤肉味&type=auto,15,0,1
+1732948752339,16,Products,200,,线程组 1-80,text,true,,1185,271,1,1,http://192.168.9.198:8080/products?name=魔法帝国奶酥玉米味&type=auto,16,0,1
+1732948752364,16,Products,200,,线程组 1-81,text,true,,998,244,1,1,http://192.168.9.198:8080/products?name=魔法士方便面&type=auto,16,0,1
+1732948752393,16,Products,200,,线程组 1-82,text,true,,1458,235,1,1,http://192.168.9.198:8080/products?name=魔冰萍果汁&type=auto,16,0,1
+1732948752415,16,Products,200,,线程组 1-83,text,true,,2545,235,1,1,http://192.168.9.198:8080/products?name=魔冰水蜜桃&type=auto,16,0,1
+1732948752439,17,Products,200,,线程组 1-84,text,true,,1335,226,1,1,http://192.168.9.198:8080/products?name=魔冰橙汁&type=auto,17,0,1
+1732948752464,16,Products,200,,线程组 1-85,text,true,,1320,226,1,1,http://192.168.9.198:8080/products?name=魔冰桃汁&type=auto,16,0,1
+1732948752490,16,Products,200,,线程组 1-86,text,true,,1162,226,1,1,http://192.168.9.198:8080/products?name=鬼脸巧力&type=auto,16,0,0
+1732948752514,16,Products,200,,线程组 1-87,text,true,,1793,283,1,1,http://192.168.9.198:8080/products?name=鬼脸嘟嘟375草莓夹心饼干&type=auto,16,0,1
+1732948752539,16,Products,200,,线程组 1-88,text,true,,1742,235,1,1,http://192.168.9.198:8080/products?name=高露洁高钙&type=auto,16,0,1
+1732948752564,16,Products,200,,线程组 1-89,text,true,,1460,307,1,1,http://192.168.9.198:8080/products?name=高露洁超感牙膏（买一送一）&type=auto,16,0,0
+1732948752589,16,Products,200,,线程组 1-90,text,true,,1328,253,1,1,http://192.168.9.198:8080/products?name=高露洁蜂胶牙膏&type=auto,16,0,1
+1732948752614,17,Products,200,,线程组 1-91,text,true,,2553,298,1,1,http://192.168.9.198:8080/products?name=高露洁草本超强特惠装牙膏&type=auto,17,0,1
+1732948752639,16,Products,200,,线程组 1-92,text,true,,1168,253,1,1,http://192.168.9.198:8080/products?name=高露洁草本牙膏&type=auto,16,0,1
+1732948752664,22,Products,200,,线程组 1-93,text,true,,871,271,1,1,http://192.168.9.198:8080/products?name=高露洁草本三重牙膏&type=auto,21,0,1
+1732948752689,16,Products,200,,线程组 1-94,text,true,,2685,245,1,1,http://192.168.9.198:8080/products?name=高露洁维C牙膏&type=auto,16,0,1
+1732948752715,15,Products,200,,线程组 1-95,text,true,,1611,227,1,1,http://192.168.9.198:8080/products?name=高露洁维C&type=auto,15,0,0
+1732948752739,15,Products,200,,线程组 1-96,text,true,,1210,307,1,1,http://192.168.9.198:8080/products?name=高露洁冰凉薄荷（买一送一）&type=auto,15,0,1
+1732948752764,16,Products,200,,线程组 1-97,text,true,,864,271,1,1,http://192.168.9.198:8080/products?name=高露洁三重功效牙膏&type=auto,16,0,1
+1732948752789,16,Products,200,,线程组 1-98,text,true,,1461,262,1,1,http://192.168.9.198:8080/products?name=高露洁三笑牙刷QB1659-97&type=auto,15,0,1
+1732948752814,16,Products,200,,线程组 1-99,text,true,,1604,262,1,1,http://192.168.9.198:8080/products?name=高露冰爽草莓牙膏&type=auto,16,0,1
+1732948752838,15,Products,200,,线程组 1-100,text,true,,1617,235,1,1,http://192.168.9.198:8080/products?name=高级口香糖&type=auto,15,0,1
+1732948752864,16,Products,200,,线程组 1-101,text,true,,2197,256,1,1,http://192.168.9.198:8080/products?name=高度纯400莲花味精&type=auto,16,0,1
+1732948752888,15,Products,200,,线程组 1-102,text,true,,2082,256,1,1,http://192.168.9.198:8080/products?name=高度纯200莲花味精&type=auto,15,0,1
+1732948752914,9,Products,500,,线程组 1-103,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=高原牧场牛乳饼干&type=auto,9,0,1
+1732948752942,10,Products,500,,线程组 1-104,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=高原牧场牛乳饼干&type=auto,10,0,1
+1732948752967,16,Products,200,,线程组 1-105,text,true,,1939,273,1,1,http://192.168.9.198:8080/products?name=高原果汁(萍果)妙字号&type=auto,16,0,1
+1732948752989,16,Products,200,,线程组 1-106,text,true,,1965,273,1,1,http://192.168.9.198:8080/products?name=高原果汁(密桃)妙字号&type=auto,16,0,1
+1732948753014,15,Products,200,,线程组 1-107,text,true,,1753,244,1,1,http://192.168.9.198:8080/products?name=高乐高草莓味&type=auto,15,0,0
+1732948753039,16,Products,200,,线程组 1-108,text,true,,995,244,1,1,http://192.168.9.198:8080/products?name=高乐高巧力味&type=auto,16,0,1
+1732948753065,16,Products,200,,线程组 1-109,text,true,,1293,224,1,1,http://192.168.9.198:8080/products?name=马铅笔2B%206B&type=auto,16,0,1
+1732948753089,16,Products,200,,线程组 1-110,text,true,,1647,262,1,1,http://192.168.9.198:8080/products?name=马利牌水粉画颜料&type=auto,16,0,1
+1732948753114,16,Products,200,,线程组 1-111,text,true,,1173,253,1,1,http://192.168.9.198:8080/products?name=香鲜一品骨汤料&type=auto,16,0,1
+1732948753139,16,Products,200,,线程组 1-112,text,true,,1476,235,1,1,http://192.168.9.198:8080/products?name=香雪儿雪糕&type=auto,15,0,1
+1732948753163,16,Products,200,,线程组 1-113,text,true,,1783,226,1,1,http://192.168.9.198:8080/products?name=香酥鸡脖&type=auto,16,0,1
+1732948753189,16,Products,200,,线程组 1-114,text,true,,1157,226,1,1,http://192.168.9.198:8080/products?name=香酥鸡翅&type=auto,16,0,1
+1732948753215,16,Products,200,,线程组 1-115,text,true,,2329,235,1,1,http://192.168.9.198:8080/products?name=香辣鸡肉王&type=auto,16,0,1
+1732948753240,15,Products,200,,线程组 1-116,text,true,,1442,241,1,1,http://192.168.9.198:8080/products?name=香辣香脆肠451020&type=auto,15,0,1
+1732948753264,16,Products,200,,线程组 1-117,text,true,,2105,261,1,1,http://192.168.9.198:8080/products?name=香辣香脆肠(网兜)451020&type=auto,16,0,1
+1732948753290,15,Products,200,,线程组 1-118,text,true,,1009,235,1,1,http://192.168.9.198:8080/products?name=香辣香脆肠&type=auto,15,0,0
+1732948753314,17,Products,200,,线程组 1-119,text,true,,1193,235,1,1,http://192.168.9.198:8080/products?name=香辣香脆畅&type=auto,16,0,1
+1732948753339,16,Products,200,,线程组 1-120,text,true,,1169,230,1,1,http://192.168.9.198:8080/products?name=香辣豆干(80)&type=auto,16,0,1
+1732948753363,17,Products,200,,线程组 1-121,text,true,,1445,226,1,1,http://192.168.9.198:8080/products?name=香辣豆干&type=auto,17,0,1
+1732948753388,16,Products,200,,线程组 1-122,text,true,,1604,226,1,1,http://192.168.9.198:8080/products?name=香辣蚕豆&type=auto,16,0,0
+1732948753414,17,Products,200,,线程组 1-123,text,true,,867,235,1,1,http://192.168.9.198:8080/products?name=香辣牛肉王&type=auto,17,0,1
+1732948753440,16,Products,200,,线程组 1-124,text,true,,1009,235,1,1,http://192.168.9.198:8080/products?name=香辣牛肉干&type=auto,16,0,1
+1732948753464,15,Products,200,,线程组 1-125,text,true,,1604,226,1,1,http://192.168.9.198:8080/products?name=香辣烤肠&type=auto,15,0,1
+1732948753489,15,Products,200,,线程组 1-126,text,true,,998,231,1,1,http://192.168.9.198:8080/products?name=香辣火腿(280)&type=auto,15,0,1
+1732948753516,16,Products,200,,线程组 1-127,text,true,,1165,228,1,1,http://192.168.9.198:8080/products?name=香辣派对65&type=auto,16,0,1
+1732948753542,17,Products,200,,线程组 1-128,text,true,,1140,235,1,1,http://192.168.9.198:8080/products?name=香菇橄榄菜&type=auto,16,0,1
+1732948753569,16,Products,200,,线程组 1-129,text,true,,1861,208,1,1,http://192.168.9.198:8080/products?name=香菇&type=auto,16,0,1
+1732948753593,16,Products,200,,线程组 1-130,text,true,,1963,239,1,1,http://192.168.9.198:8080/products?name=香脆肠(50单支)&type=auto,16,0,1
+1732948753622,15,Products,200,,线程组 1-131,text,true,,1425,217,1,1,http://192.168.9.198:8080/products?name=香甜王&type=auto,15,0,1
+1732948753639,15,Products,200,,线程组 1-132,text,true,,1306,228,1,1,http://192.168.9.198:8080/products?name=香甜派对65&type=auto,15,0,1
+1732948753666,15,Products,200,,线程组 1-133,text,true,,1167,232,1,1,http://192.168.9.198:8080/products?name=香猪油(1000盒)&type=auto,15,0,1
+1732948753692,15,Products,200,,线程组 1-134,text,true,,1924,231,1,1,http://192.168.9.198:8080/products?name=香烤火腿(280)&type=auto,15,0,0
+1732948753715,14,Products,200,,线程组 1-135,text,true,,1920,244,1,1,http://192.168.9.198:8080/products?name=香满园调和油&type=auto,14,0,1
+1732948753739,15,Products,200,,线程组 1-136,text,true,,1007,235,1,1,http://192.168.9.198:8080/products?name=香歌里紫菜&type=auto,15,0,1
+1732948753780,16,Products,200,,线程组 1-137,text,true,,2521,244,2,2,http://192.168.9.198:8080/products?name=香格里鸡汁汤&type=auto,16,0,1
+1732948753789,9,Products,500,,线程组 1-138,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=香格里紫菜&type=auto,9,0,1
+1732948753813,10,Products,500,,线程组 1-139,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=香格里紫菜&type=auto,9,0,1
+1732948753838,16,Products,200,,线程组 1-140,text,true,,1589,244,1,1,http://192.168.9.198:8080/products?name=香格里排骨王&type=auto,16,0,1
+1732948753864,16,Products,200,,线程组 1-141,text,true,,1154,217,1,1,http://192.168.9.198:8080/products?name=香心枣&type=auto,16,0,1
+1732948753889,16,Products,200,,线程组 1-142,text,true,,1288,244,1,1,http://192.168.9.198:8080/products?name=香当当软面包&type=auto,16,0,1
+1732948753913,16,Products,200,,线程组 1-143,text,true,,1307,244,1,1,http://192.168.9.198:8080/products?name=香喷喷香鸡棒&type=auto,15,0,1
+1732948753938,16,Products,200,,线程组 1-144,text,true,,1150,235,1,1,http://192.168.9.198:8080/products?name=香吧佬鸡腿&type=auto,16,0,1
+1732948753963,16,Products,200,,线程组 1-145,text,true,,1473,226,1,1,http://192.168.9.198:8080/products?name=香卤豆干&type=auto,16,0,1
+1732948753989,15,Products,200,,线程组 1-146,text,true,,2202,231,1,1,http://192.168.9.198:8080/products?name=香卤猪肚(200)&type=auto,15,0,1
+1732948754019,16,Products,200,,线程组 1-147,text,true,,1633,244,1,1,http://192.168.9.198:8080/products?name=香万家调和油&type=auto,16,0,1
+1732948754037,15,Products,200,,线程组 1-148,text,true,,1640,208,1,1,http://192.168.9.198:8080/products?name=饼干&type=auto,15,0,1
+1732948754064,15,Products,200,,线程组 1-149,text,true,,1511,293,1,1,http://192.168.9.198:8080/products?name=餐宝钢化耐热玻璃餐具MW65＃&type=auto,15,0,0
+1732948754089,15,Products,200,,线程组 1-150,text,true,,1126,232,1,1,http://192.168.9.198:8080/products?name=食用猪油(1000)&type=auto,15,0,1
+1732948754113,15,Products,200,,线程组 1-151,text,true,,1932,253,1,1,http://192.168.9.198:8080/products?name=食全食美糖桂花&type=auto,15,0,1
+1732948754137,15,Products,200,,线程组 1-152,text,true,,1434,244,1,1,http://192.168.9.198:8080/products?name=飞鸽幼儿奶粉&type=auto,15,0,1
+1732948754164,15,Products,200,,线程组 1-153,text,true,,1762,226,1,1,http://192.168.9.198:8080/products?name=飞梭双刀&type=auto,15,0,0
+1732948754189,15,Products,200,,线程组 1-154,text,true,,1761,253,1,1,http://192.168.9.198:8080/products?name=飘香四季洗发水&type=auto,14,0,0
+1732948754213,15,Products,200,,线程组 1-155,text,true,,1894,271,1,1,http://192.168.9.198:8080/products?name=飘柔葡萄保湿沐浴露&type=auto,15,0,1
+1732948754238,16,Products,200,,线程组 1-156,text,true,,1006,271,1,1,http://192.168.9.198:8080/products?name=飘柔珍珠亮白沐浴露&type=auto,15,0,0
+1732948754264,16,Products,200,,线程组 1-157,text,true,,1909,262,1,1,http://192.168.9.198:8080/products?name=飘柔滋润去屑精华&type=auto,16,0,1
+1732948754289,15,Products,200,,线程组 1-158,text,true,,1773,271,1,1,http://192.168.9.198:8080/products?name=飘柔清爽滋润洗发水&type=auto,15,0,1
+1732948754313,15,Products,200,,线程组 1-159,text,true,,1159,244,1,1,http://192.168.9.198:8080/products?name=飘柔活力精华&type=auto,15,0,1
+1732948754338,10,Products,500,,线程组 1-160,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=飘柔洗发露&type=auto,10,0,1
+1732948754364,11,Products,500,,线程组 1-161,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=飘柔洗发露&type=auto,11,0,1
+1732948754389,10,Products,500,,线程组 1-162,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=飘柔洗发水&type=auto,10,0,1
+1732948754413,10,Products,500,,线程组 1-163,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=飘柔洗发水&type=auto,10,0,1
+1732948754438,16,Products,200,,线程组 1-164,text,true,,2416,253,1,1,http://192.168.9.198:8080/products?name=飘柔去屑洗发水&type=auto,15,0,1
+1732948754464,16,Products,200,,线程组 1-165,text,true,,1456,253,1,1,http://192.168.9.198:8080/products?name=飘柔兰花洗发露&type=auto,16,0,1
+1732948754490,17,Products,200,,线程组 1-166,text,true,,1327,244,1,1,http://192.168.9.198:8080/products?name=飘柔兰花套装&type=auto,17,0,1
+1732948754514,16,Products,200,,线程组 1-167,text,true,,1762,262,1,1,http://192.168.9.198:8080/products?name=飘影净白润肤香皂&type=auto,15,0,1
+1732948754539,15,Products,200,,线程组 1-168,text,true,,2086,239,1,1,http://192.168.9.198:8080/products?name=顺胜高级盆1018&type=auto,15,0,0
+1732948754564,16,Products,200,,线程组 1-169,text,true,,1597,235,1,1,http://192.168.9.198:8080/products?name=顺胜多用盆&type=auto,16,0,1
+1732948754588,16,Products,200,,线程组 1-170,text,true,,1765,257,1,1,http://192.168.9.198:8080/products?name=顺胜四层长方架7344&type=auto,16,0,1
+1732948754614,16,Products,200,,线程组 1-171,text,true,,1879,253,1,1,http://192.168.9.198:8080/products?name=顺昌荔浦香芋糕&type=auto,16,0,1
+1732948754639,15,Products,200,,线程组 1-172,text,true,,1175,253,1,1,http://192.168.9.198:8080/products?name=顺昌纯正桂花糕&type=auto,15,0,1
+1732948754664,15,Products,200,,线程组 1-173,text,true,,1017,253,1,1,http://192.168.9.198:8080/products?name=顺昌桂花马蹄糕&type=auto,15,0,1
+1732948754688,16,Products,200,,线程组 1-174,text,true,,1618,253,1,1,http://192.168.9.198:8080/products?name=顺昌桂花绿豆糕&type=auto,16,0,1
+1732948754713,15,Products,200,,线程组 1-175,text,true,,1317,253,1,1,http://192.168.9.198:8080/products?name=顺昌桂花板粟糕&type=auto,15,0,0
+1732948754739,15,Products,200,,线程组 1-176,text,true,,1309,235,1,1,http://192.168.9.198:8080/products?name=顺旺香葱王&type=auto,15,0,1
+1732948754764,16,Products,200,,线程组 1-177,text,true,,1163,235,1,1,http://192.168.9.198:8080/products?name=顺旺大红枣&type=auto,16,0,1
+1732948754788,16,Products,200,,线程组 1-178,text,true,,1491,226,1,1,http://192.168.9.198:8080/products?name=顶峰白醋&type=auto,16,0,1
+1732948754814,16,Products,200,,线程组 1-179,text,true,,1902,226,1,1,http://192.168.9.198:8080/products?name=韩式板烧&type=auto,16,0,1
+1732948754839,16,Products,200,,线程组 1-180,text,true,,1309,262,1,1,http://192.168.9.198:8080/products?name=韩尚美营养保湿霜&type=auto,16,0,1
+1732948754863,16,Products,200,,线程组 1-181,text,true,,2276,280,1,1,http://192.168.9.198:8080/products?name=韩尚美美白活肤洁面乳&type=auto,16,0,1
+1732948754888,16,Products,200,,线程组 1-182,text,true,,2546,280,1,1,http://192.168.9.198:8080/products?name=韩尚美深层保湿精华素&type=auto,16,0,1
+1732948754914,16,Products,200,,线程组 1-183,text,true,,1615,262,1,1,http://192.168.9.198:8080/products?name=韩尚美抗皱嫩肤霜&type=auto,16,0,1
+1732948754939,15,Products,200,,线程组 1-184,text,true,,1786,262,1,1,http://192.168.9.198:8080/products?name=韩尚美净爽洁面乳&type=auto,15,0,0
+1732948754963,16,Products,200,,线程组 1-185,text,true,,1490,280,1,1,http://192.168.9.198:8080/products?name=韩尚美净化美白粉底液&type=auto,16,0,0
+1732948754994,17,Products,200,,线程组 1-186,text,true,,1615,271,1,1,http://192.168.9.198:8080/products?name=韩尚美净化美白修护&type=auto,17,0,1
+1732948755014,10,Products,500,,线程组 1-187,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=韩尚美保湿活肤乳&type=auto,9,0,1
+1732948755040,9,Products,500,,线程组 1-188,text,false,Test failed: code expected to contain /200/,253,262,1,1,http://192.168.9.198:8080/products?name=韩尚美保湿活肤乳&type=auto,9,0,0
+1732948755063,16,Products,200,,线程组 1-189,text,true,,1595,208,1,1,http://192.168.9.198:8080/products?name=面包&type=auto,16,0,0
+1732948755089,16,Products,200,,线程组 1-190,text,true,,1600,226,1,1,http://192.168.9.198:8080/products?name=非主流本&type=auto,16,0,1
+1732948755114,18,Products,200,,线程组 1-191,text,true,,1744,226,1,1,http://192.168.9.198:8080/products?name=青豆果子&type=auto,18,0,1
+1732948755138,17,Products,200,,线程组 1-192,text,true,,1021,283,1,1,http://192.168.9.198:8080/products?name=青蛙王子柠檬精品香皂100&type=auto,17,0,1
+1732948755164,16,Products,200,,线程组 1-193,text,true,,1625,226,1,1,http://192.168.9.198:8080/products?name=青菜笋丝&type=auto,16,0,1
+1732948755189,16,Products,200,,线程组 1-194,text,true,,1760,271,1,1,http://192.168.9.198:8080/products?name=青春之花芦荟洗面奶&type=auto,16,0,1
+1732948755213,15,Products,200,,线程组 1-195,text,true,,1153,271,1,1,http://192.168.9.198:8080/products?name=青春之花木瓜洗面奶&type=auto,15,0,0
+1732948755239,16,Products,200,,线程组 1-196,text,true,,1509,249,1,1,http://192.168.9.198:8080/products?name=青岛风味火腿(380)&type=auto,16,0,1
+1732948755264,16,Products,200,,线程组 1-197,text,true,,2555,258,1,1,http://192.168.9.198:8080/products?name=青岛风味小火腿(100)&type=auto,16,0,0
+1732948755289,16,Products,200,,线程组 1-198,text,true,,1455,229,1,1,http://192.168.9.198:8080/products?name=青岛啤酒600&type=auto,16,0,1
+1732948755314,16,Products,200,,线程组 1-199,text,true,,1919,265,1,1,http://192.168.9.198:8080/products?name=青岛啤酒（600整件）&type=auto,16,0,1
+1732948755339,19,Products,200,,线程组 1-200,text,true,,1487,235,1,1,http://192.168.9.198:8080/products?name=霸王黑芝麻&type=auto,19,0,1
+1732948755364,15,Products,200,,线程组 1-201,text,true,,1463,226,1,1,http://192.168.9.198:8080/products?name=霸王防脱&type=auto,15,0,0
+1732948755389,16,Products,200,,线程组 1-202,text,true,,1469,247,1,1,http://192.168.9.198:8080/products?name=霸王洗发露400多&type=auto,16,0,0
+1732948755414,16,Products,200,,线程组 1-203,text,true,,1304,235,1,1,http://192.168.9.198:8080/products?name=霸王洗发露&type=auto,16,0,1
+1732948755438,16,Products,200,,线程组 1-204,text,true,,1750,253,1,1,http://192.168.9.198:8080/products?name=霸王人参洗发露&type=auto,16,0,1
+1732948755463,15,Products,200,,线程组 1-205,text,true,,2393,235,1,1,http://192.168.9.198:8080/products?name=露露核桃露&type=auto,15,0,0
+1732948755495,17,Products,200,,线程组 1-206,text,true,,1646,244,1,1,http://192.168.9.198:8080/products?name=露露核桃牛奶&type=auto,17,0,1
+1732948755517,16,Products,200,,线程组 1-207,text,true,,1758,253,1,1,http://192.168.9.198:8080/products?name=露露幸露枸杞露&type=auto,15,0,1
+1732948755541,10,Products,500,,线程组 1-208,text,false,Test failed: code expected to contain /200/,253,226,1,1,http://192.168.9.198:8080/products?name=雪花啤酒&type=auto,10,0,1
+1732948755565,14,Products,500,,线程组 1-209,text,false,Test failed: code expected to contain /200/,253,226,1,1,http://192.168.9.198:8080/products?name=雪花啤酒&type=auto,14,0,1
+1732948755589,18,Products,200,,线程组 1-210,text,true,,1009,235,1,1,http://192.168.9.198:8080/products?name=雪花午餐肉&type=auto,18,0,1
+1732948755613,15,Products,200,,线程组 1-211,text,true,,1161,214,1,1,http://192.168.9.198:8080/products?name=雪碧225000&type=auto,15,0,1
+1732948755639,15,Products,200,,线程组 1-212,text,true,,1442,208,1,1,http://192.168.9.198:8080/products?name=雪碧&type=auto,15,0,1
+1732948755664,17,Products,200,,线程组 1-213,text,true,,2074,235,1,1,http://192.168.9.198:8080/products?name=雪浪祛痘霜&type=auto,17,0,1
+1732948755688,16,Products,200,,线程组 1-214,text,true,,1328,253,1,1,http://192.168.9.198:8080/products?name=雪浪净螨保湿霜&type=auto,16,0,0
+1732948755714,16,Products,200,,线程组 1-215,text,true,,1126,208,1,1,http://192.168.9.198:8080/products?name=雪梅&type=auto,16,0,1
+1732948755739,16,Products,200,,线程组 1-216,text,true,,2327,262,1,1,http://192.168.9.198:8080/products?name=雪兰山原汁葡萄酒&type=auto,16,0,1
+1732948755764,16,Products,200,,线程组 1-217,text,true,,2642,244,1,1,http://192.168.9.198:8080/products?name=雪丽糍小丸饼&type=auto,16,0,1
+1732948755789,16,Products,200,,线程组 1-218,text,true,,2045,253,1,1,http://192.168.9.198:8080/products?name=雪丽糍、草莓味&type=auto,16,0,1
+1732948755813,16,Products,200,,线程组 1-219,text,true,,2228,253,1,1,http://192.168.9.198:8080/products?name=雨润香辣热狗肠&type=auto,16,0,1
+1732948755838,16,Products,200,,线程组 1-220,text,true,,1596,244,1,1,http://192.168.9.198:8080/products?name=雨洁活力青柠&type=auto,15,0,0
+1732948755864,16,Products,200,,线程组 1-221,text,true,,1173,244,1,1,http://192.168.9.198:8080/products?name=雨洁活力清宁&type=auto,16,0,1
+1732948755889,16,Products,200,,线程组 1-222,text,true,,1749,253,1,1,http://192.168.9.198:8080/products?name=雨洁活力洗发露&type=auto,16,0,1
+1732948755914,16,Products,200,,线程组 1-223,text,true,,1785,262,1,1,http://192.168.9.198:8080/products?name=雨洁水之润洗发露&type=auto,16,0,1
+1732948755938,16,Products,200,,线程组 1-224,text,true,,1170,271,1,1,http://192.168.9.198:8080/products?name=雨洁水之润丝质顺滑&type=auto,16,0,1
+1732948755964,16,Products,200,,线程组 1-225,text,true,,2333,253,1,1,http://192.168.9.198:8080/products?name=雨洁去屑洗发露&type=auto,16,0,0
+1732948755990,17,Products,200,,线程组 1-226,text,true,,1163,253,1,1,http://192.168.9.198:8080/products?name=雨洁去屑洗发水&type=auto,17,0,1
+1732948756016,16,Products,200,,线程组 1-227,text,true,,1159,244,1,1,http://192.168.9.198:8080/products?name=雨洁倍润修复&type=auto,16,0,0
+1732948756041,16,Products,200,,线程组 1-228,text,true,,1796,253,1,1,http://192.168.9.198:8080/products?name=雕牌高级增白皂&type=auto,16,0,0
+1732948756067,17,Products,200,,线程组 1-229,text,true,,2105,248,1,1,http://192.168.9.198:8080/products?name=雕牌透明皂3粉280&type=auto,17,0,1
+1732948756089,16,Products,200,,线程组 1-230,text,true,,2223,248,1,1,http://192.168.9.198:8080/products?name=雕牌透明皂3粉242&type=auto,16,0,1
+1732948756114,17,Products,200,,线程组 1-231,text,true,,1658,248,1,1,http://192.168.9.198:8080/products?name=雕牌透明皂3皂242&type=auto,17,0,1
+1732948756139,16,Products,200,,线程组 1-232,text,true,,1293,235,1,1,http://192.168.9.198:8080/products?name=雕牌透明皂&type=auto,16,0,1
+1732948756164,17,Products,200,,线程组 1-233,text,true,,1335,238,1,1,http://192.168.9.198:8080/products?name=雕牌超能皂242&type=auto,17,0,1
+1732948756189,17,Products,200,,线程组 1-234,text,true,,1461,257,1,1,http://192.168.9.198:8080/products?name=雕牌超能洗衣粉1800&type=auto,17,0,1
+1732948756214,16,Products,200,,线程组 1-235,text,true,,1483,253,1,1,http://192.168.9.198:8080/products?name=雕牌超能洗衣粉&type=auto,16,0,1
+1732948756239,16,Products,200,,线程组 1-236,text,true,,2551,271,1,1,http://192.168.9.198:8080/products?name=雕牌超白加香洗衣粉&type=auto,16,0,1
+1732948756264,16,Products,200,,线程组 1-237,text,true,,1327,244,1,1,http://192.168.9.198:8080/products?name=雕牌超白加香&type=auto,16,0,1
+1732948756289,15,Products,200,,线程组 1-238,text,true,,2265,256,1,1,http://192.168.9.198:8080/products?name=雕牌超效洗衣粉650&type=auto,15,0,0
+1732948756313,15,Products,200,,线程组 1-239,text,true,,1477,256,1,1,http://192.168.9.198:8080/products?name=雕牌超效洗衣粉350&type=auto,15,0,0
+1732948756339,16,Products,200,,线程组 1-240,text,true,,2096,260,1,1,http://192.168.9.198:8080/products?name=雕牌超效洗衣粉1638000&type=auto,16,0,1
+1732948756367,16,Products,200,,线程组 1-241,text,true,,2392,253,1,1,http://192.168.9.198:8080/products?name=雕牌超效洗洁精&type=auto,16,0,1
+1732948756392,16,Products,200,,线程组 1-242,text,true,,1756,271,1,1,http://192.168.9.198:8080/products?name=雕牌超效加酶洗衣粉&type=auto,16,0,1
+1732948756415,16,Products,200,,线程组 1-243,text,true,,1761,275,1,1,http://192.168.9.198:8080/products?name=雕牌瑞士配方洗衣粉2000&type=auto,16,0,1
+1732948756440,16,Products,200,,线程组 1-244,text,true,,2403,253,1,1,http://192.168.9.198:8080/products?name=雕牌焕彩植物皂&type=auto,16,0,1
+1732948756463,16,Products,200,,线程组 1-245,text,true,,866,262,1,1,http://192.168.9.198:8080/products?name=雕牌洗衣皂促销装&type=auto,16,0,1
+1732948756491,16,Products,200,,线程组 1-246,text,true,,2257,235,1,1,http://192.168.9.198:8080/products?name=雕牌洗衣皂&type=auto,16,0,1
+1732948756518,16,Products,200,,线程组 1-247,text,true,,1323,244,1,1,http://192.168.9.198:8080/products?name=雕牌天然皂粉&type=auto,15,0,1
+1732948756539,16,Products,200,,线程组 1-248,text,true,,1461,235,1,1,http://192.168.9.198:8080/products?name=雕牌增白皂&type=auto,16,0,1
+1732948756569,16,Products,200,,线程组 1-249,text,true,,1910,253,1,1,http://192.168.9.198:8080/products?name=雕牌全效洗洁精&type=auto,16,0,0
+1732948756590,15,Products,200,,线程组 1-250,text,true,,1627,253,1,1,http://192.168.9.198:8080/products?name=雕牌促销装肥皂&type=auto,15,0,1
+1732948756614,15,Products,200,,线程组 1-251,text,true,,1764,244,1,1,http://192.168.9.198:8080/products?name=雅香甜木糖醇&type=auto,15,0,0
+1732948756639,15,Products,200,,线程组 1-252,text,true,,2275,244,1,1,http://192.168.9.198:8080/products?name=雅芙黑芝麻糊&type=auto,15,0,1
+1732948756664,16,Products,200,,线程组 1-253,text,true,,1323,253,1,1,http://192.168.9.198:8080/products?name=雅芙高钙豆奶粉&type=auto,16,0,1
+1732948756687,16,Products,200,,线程组 1-254,text,true,,1969,235,1,1,http://192.168.9.198:8080/products?name=雅芙核桃粉&type=auto,16,0,1
+1732948756714,16,Products,200,,线程组 1-255,text,true,,1175,280,1,1,http://192.168.9.198:8080/products?name=雅芙中老年低糖豆奶粉&type=auto,16,0,1
+1732948756745,17,Products,200,,线程组 1-256,text,true,,1016,239,1,1,http://192.168.9.198:8080/products?name=雅致餐具套3884&type=auto,17,0,1
+1732948756771,16,Products,200,,线程组 1-257,text,true,,1746,253,1,1,http://192.168.9.198:8080/products?name=雅美空气清新剂&type=auto,16,0,1
+1732948756789,15,Products,200,,线程组 1-258,text,true,,1767,238,1,1,http://192.168.9.198:8080/products?name=雅美清新剂520&type=auto,15,0,1
+1732948756813,16,Products,200,,线程组 1-259,text,true,,1773,235,1,1,http://192.168.9.198:8080/products?name=雅美清新剂&type=auto,15,0,0
+1732948756841,16,Products,200,,线程组 1-260,text,true,,1472,253,1,1,http://192.168.9.198:8080/products?name=雅客香草薄荷糖&type=auto,16,0,0
+1732948756865,16,Products,200,,线程组 1-261,text,true,,1612,235,1,1,http://192.168.9.198:8080/products?name=雅客香草糖&type=auto,16,0,1
+1732948756889,16,Products,200,,线程组 1-262,text,true,,1932,253,1,1,http://192.168.9.198:8080/products?name=雅客香浓哈密瓜&type=auto,16,0,1
+1732948756914,16,Products,200,,线程组 1-263,text,true,,2202,253,1,1,http://192.168.9.198:8080/products?name=雅客香橙木糖醇&type=auto,16,0,1
+1732948756938,15,Products,200,,线程组 1-264,text,true,,1488,253,1,1,http://192.168.9.198:8080/products?name=雅客超冰无糖纯&type=auto,15,0,0
+1732948756963,16,Products,200,,线程组 1-265,text,true,,1036,253,1,1,http://192.168.9.198:8080/products?name=雅客蜜瓜木糖醇&type=auto,16,0,1
+1732948756989,17,Products,200,,线程组 1-266,text,true,,1281,226,1,1,http://192.168.9.198:8080/products?name=雅客蓝梅&type=auto,17,0,1
+1732948757014,16,Products,200,,线程组 1-267,text,true,,1200,253,1,1,http://192.168.9.198:8080/products?name=雅客葡萄吸吸冻&type=auto,16,0,1
+1732948757039,15,Products,200,,线程组 1-268,text,true,,1334,253,1,1,http://192.168.9.198:8080/products?name=雅客荔枝吸吸冻&type=auto,15,0,1
+1732948757065,16,Products,200,,线程组 1-269,text,true,,1336,253,1,1,http://192.168.9.198:8080/products?name=雅客草莓木糖醇&type=auto,16,0,1
+1732948757089,16,Products,200,,线程组 1-270,text,true,,1791,253,1,1,http://192.168.9.198:8080/products?name=雅客草莓夹心糖&type=auto,16,0,1
+1732948757113,16,Products,200,,线程组 1-271,text,true,,1160,289,1,1,http://192.168.9.198:8080/products?name=雅客益牙木糖醇（草莓）&type=auto,16,0,1
+1732948757139,15,Products,200,,线程组 1-272,text,true,,1613,253,1,1,http://192.168.9.198:8080/products?name=雅客木糖醇香橙&type=auto,15,0,0
+1732948757164,16,Products,200,,线程组 1-273,text,true,,1009,280,1,1,http://192.168.9.198:8080/products?name=雅客木糖醇（香橙味）&type=auto,15,0,0
+1732948757189,16,Products,200,,线程组 1-274,text,true,,1965,280,1,1,http://192.168.9.198:8080/products?name=雅客木糖醇（蜜瓜味）&type=auto,16,0,1
+1732948757213,16,Products,200,,线程组 1-275,text,true,,1028,280,1,1,http://192.168.9.198:8080/products?name=雅客木糖醇（草莓味）&type=auto,15,0,1
+1732948757239,16,Products,200,,线程组 1-276,text,true,,1932,253,1,1,http://192.168.9.198:8080/products?name=雅客无糖口香糖&type=auto,16,0,1
+1732948757265,15,Products,200,,线程组 1-277,text,true,,1409,226,1,1,http://192.168.9.198:8080/products?name=雅客奶茶&type=auto,15,0,1
+1732948757290,9,Products,500,,线程组 1-278,text,false,Test failed: code expected to contain /200/,253,253,1,1,http://192.168.9.198:8080/products?name=雅客嘀哒嘀奶糖&type=auto,9,0,1
+1732948757314,10,Products,500,,线程组 1-279,text,false,Test failed: code expected to contain /200/,253,253,1,1,http://192.168.9.198:8080/products?name=雅客嘀哒嘀奶糖&type=auto,10,0,1
+1732948757340,10,Products,500,,线程组 1-280,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=雅客吸吸冻&type=auto,10,0,0
+1732948757364,11,Products,500,,线程组 1-281,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=雅客吸吸冻&type=auto,11,0,1
+1732948757389,11,Products,500,,线程组 1-282,text,false,Test failed: code expected to contain /200/,253,235,1,1,http://192.168.9.198:8080/products?name=雅客吸吸冻&type=auto,10,0,1
+1732948757415,15,Products,200,,线程组 1-283,text,true,,1603,244,1,1,http://192.168.9.198:8080/products?name=雅客原味奶茶&type=auto,15,0,0
+1732948757438,15,Products,200,,线程组 1-284,text,true,,1600,235,1,1,http://192.168.9.198:8080/products?name=雅客利是糖&type=auto,15,0,0
+1732948757464,15,Products,200,,线程组 1-285,text,true,,1965,262,1,1,http://192.168.9.198:8080/products?name=雅客凉点（薄荷）&type=auto,15,0,1
+1732948757489,17,Products,200,,线程组 1-286,text,true,,1919,237,1,1,http://192.168.9.198:8080/products?name=雅客VQ酸奶味&type=auto,17,0,1
+1732948757513,16,Products,200,,线程组 1-287,text,true,,1450,237,1,1,http://192.168.9.198:8080/products?name=雅客VQ葡萄味&type=auto,16,0,1
+1732948757538,16,Products,200,,线程组 1-288,text,true,,2397,237,1,1,http://192.168.9.198:8080/products?name=雅客VQ芒果味&type=auto,15,0,1
+1732948757565,24,Products,200,,线程组 1-289,text,true,,1606,237,2,2,http://192.168.9.198:8080/products?name=雅客VQ可乐味&type=auto,24,0,9
+1732948757589,15,Products,200,,线程组 1-290,text,true,,1152,228,1,1,http://192.168.9.198:8080/products?name=雅客V9桶装&type=auto,15,0,1
+1732948757614,16,Products,200,,线程组 1-291,text,true,,1285,212,1,1,http://192.168.9.198:8080/products?name=雅客V936&type=auto,16,0,1
+1732948757640,15,Products,200,,线程组 1-292,text,true,,1145,210,1,1,http://192.168.9.198:8080/products?name=雅客V9&type=auto,15,0,0
+1732948757664,16,Products,200,,线程组 1-293,text,true,,990,219,1,1,http://192.168.9.198:8080/products?name=雅客QQ糖&type=auto,16,0,1
+1732948757689,16,Products,200,,线程组 1-294,text,true,,2105,253,1,1,http://192.168.9.198:8080/products?name=雅宝牛奶沐浴露&type=auto,15,0,1
+1732948757713,16,Products,200,,线程组 1-295,text,true,,1618,244,1,1,http://192.168.9.198:8080/products?name=雅宝牛奶沐浴&type=auto,16,0,1
+1732948757738,15,Products,200,,线程组 1-296,text,true,,1636,262,1,1,http://192.168.9.198:8080/products?name=雅士利高钙豆奶粉&type=auto,15,0,0
+1732948757763,16,Products,200,,线程组 1-297,text,true,,1880,262,1,1,http://192.168.9.198:8080/products?name=雅士利铁锌钙米粉&type=auto,16,0,1
+1732948757789,16,Products,200,,线程组 1-298,text,true,,1781,272,1,1,http://192.168.9.198:8080/products?name=雅士利安贝慧奶粉3段&type=auto,16,0,1
+1732948757814,16,Products,200,,线程组 1-299,text,true,,1468,272,1,1,http://192.168.9.198:8080/products?name=雅士利安贝慧奶粉2段&type=auto,16,0,1
+1732948757839,16,Products,200,,线程组 1-300,text,true,,1472,272,1,1,http://192.168.9.198:8080/products?name=雅士利安贝慧奶粉1段&type=auto,16,0,1
+1732948757864,17,Products,200,,线程组 1-301,text,true,,1746,255,1,1,http://192.168.9.198:8080/products?name=雅士利AD钙豆奶粉&type=auto,17,0,1
+1732948757888,16,Products,200,,线程组 1-302,text,true,,1439,235,1,1,http://192.168.9.198:8080/products?name=雄心开心果&type=auto,16,0,1
+1732948757913,15,Products,200,,线程组 1-303,text,true,,1319,235,1,1,http://192.168.9.198:8080/products?name=雄发鱿鱼丝&type=auto,15,0,1
+1732948757938,16,Products,200,,线程组 1-304,text,true,,1463,235,1,1,http://192.168.9.198:8080/products?name=雄发白瓜子&type=auto,16,0,1
+1732948757964,16,Products,200,,线程组 1-305,text,true,,1973,235,1,1,http://192.168.9.198:8080/products?name=雄发牛肉干&type=auto,16,0,1
+1732948757988,16,Products,200,,线程组 1-306,text,true,,2498,235,1,1,http://192.168.9.198:8080/products?name=雄发开心果&type=auto,16,0,1
+1732948758013,15,Products,200,,线程组 1-307,text,true,,1636,244,1,1,http://192.168.9.198:8080/products?name=雄发大阪胶枣&type=auto,15,0,1
+1732948758038,17,Products,200,,线程组 1-308,text,true,,996,244,1,1,http://192.168.9.198:8080/products?name=雄发动情橄榄&type=auto,17,0,1
+1732948758064,16,Products,200,,线程组 1-309,text,true,,1470,235,1,1,http://192.168.9.198:8080/products?name=雄发农家姜&type=auto,16,0,1
+1732948758089,15,Products,200,,线程组 1-310,text,true,,1616,253,1,1,http://192.168.9.198:8080/products?name=雄发九制老婆梅&type=auto,15,0,1
+1732948758113,16,Products,200,,线程组 1-311,text,true,,1425,235,1,1,http://192.168.9.198:8080/products?name=雁王海螺酥&type=auto,16,0,1
+1732948758138,16,Products,200,,线程组 1-312,text,true,,1205,244,1,1,http://192.168.9.198:8080/products?name=雀巢抹茶奶香&type=auto,16,0,1
+1732948758163,16,Products,200,,线程组 1-313,text,true,,1603,244,1,1,http://192.168.9.198:8080/products?name=雀巢巧力咖啡&type=auto,16,0,1
+1732948758189,16,Products,200,,线程组 1-314,text,true,,1906,226,1,1,http://192.168.9.198:8080/products?name=雀巢咖啡&type=auto,16,0,1
+1732948758214,16,Products,200,,线程组 1-315,text,true,,2312,235,1,1,http://192.168.9.198:8080/products?name=雀巢原叶茶&type=auto,16,0,1
+1732948758237,16,Products,200,,线程组 1-316,text,true,,2218,249,1,1,http://192.168.9.198:8080/products?name=雀巢全脂奶粉40050&type=auto,16,0,1
+1732948758263,16,Products,200,,线程组 1-317,text,true,,868,271,1,1,http://192.168.9.198:8080/products?name=陶花碧老干妈油辣椒&type=auto,16,0,1
+1732948758289,17,Products,200,,线程组 1-318,text,true,,1604,238,1,1,http://192.168.9.198:8080/products?name=陈州甜面酱400&type=auto,17,0,1
+1732948758314,17,Products,200,,线程组 1-319,text,true,,1655,247,1,1,http://192.168.9.198:8080/products?name=陈州家常豆豉228&type=auto,17,0,1
+1732948758339,16,Products,200,,线程组 1-320,text,true,,2276,253,1,1,http://192.168.9.198:8080/products?name=阿香婆豆香锅巴&type=auto,16,0,1
+1732948758364,17,Products,200,,线程组 1-321,text,true,,1148,262,1,1,http://192.168.9.198:8080/products?name=阿尔卑斯香糯软糖&type=auto,17,0,1
+1732948758388,19,Products,200,,线程组 1-322,text,true,,1659,253,1,1,http://192.168.9.198:8080/products?name=阿尔卑斯草莓糖&type=auto,19,0,1
+1732948758414,15,Products,200,,线程组 1-323,text,true,,2231,262,1,1,http://192.168.9.198:8080/products?name=阿尔卑斯牛奶软糖&type=auto,15,0,1
+1732948758439,16,Products,200,,线程组 1-324,text,true,,2545,253,1,1,http://192.168.9.198:8080/products?name=阿尔卑斯夹心糖&type=auto,16,0,1
+1732948758463,15,Products,200,,线程组 1-325,text,true,,556,226,1,1,http://192.168.9.198:8080/products?name=阿尔卑斯&type=auto,15,0,0
+1732948758490,17,Products,200,,线程组 1-326,text,true,,2218,253,1,1,http://192.168.9.198:8080/products?name=阿一波深水海带&type=auto,17,0,1
+1732948758515,10,Products,500,,线程组 1-327,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=阳阳红油豆瓣&type=auto,10,0,1
+1732948758539,10,Products,500,,线程组 1-328,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=阳阳红油豆瓣&type=auto,10,0,1
+1732948758564,17,Products,200,,线程组 1-329,text,true,,1299,253,1,1,http://192.168.9.198:8080/products?name=阳光果油弹力素&type=auto,17,0,1
+1732948758590,15,Products,200,,线程组 1-330,text,true,,1146,244,1,1,http://192.168.9.198:8080/products?name=长通型牛奶杯&type=auto,15,0,0
+1732948758614,16,Products,200,,线程组 1-331,text,true,,2377,217,1,1,http://192.168.9.198:8080/products?name=长寿桃&type=auto,16,0,1
+1732948758639,16,Products,200,,线程组 1-332,text,true,,1019,271,1,1,http://192.168.9.198:8080/products?name=长城牛奶加钙豆奶粉&type=auto,16,0,1
+1732948758664,15,Products,200,,线程组 1-333,text,true,,1162,249,1,1,http://192.168.9.198:8080/products?name=长城核桃莲子80010&type=auto,15,0,0
+1732948758688,16,Products,200,,线程组 1-334,text,true,,1944,271,1,1,http://192.168.9.198:8080/products?name=长城中老年黑芝麻糊&type=auto,16,0,1
+1732948758714,16,Products,200,,线程组 1-335,text,true,,1460,262,1,1,http://192.168.9.198:8080/products?name=长城中老年高钙麦&type=auto,16,0,1
+1732948758739,17,Products,200,,线程组 1-336,text,true,,2369,253,1,1,http://192.168.9.198:8080/products?name=镇江永恒纯米醋&type=auto,17,0,1
+1732948758763,15,Products,200,,线程组 1-337,text,true,,1329,235,1,1,http://192.168.9.198:8080/products?name=镇江姜汁醋&type=auto,15,0,0
+1732948758788,10,Products,500,,线程组 1-338,text,false,Test failed: code expected to contain /200/,253,217,1,1,http://192.168.9.198:8080/products?name=锐意本&type=auto,10,0,1
+1732948758814,11,Products,500,,线程组 1-339,text,false,Test failed: code expected to contain /200/,253,217,1,1,http://192.168.9.198:8080/products?name=锐意本&type=auto,10,0,1
+1732948758839,17,Products,200,,线程组 1-340,text,true,,1326,244,1,1,http://192.168.9.198:8080/products?name=银鹭花生饮料&type=auto,17,0,1
+1732948758863,15,Products,200,,线程组 1-341,text,true,,1035,265,1,1,http://192.168.9.198:8080/products?name=银鹭花生牛奶250整件&type=auto,15,0,0
+1732948758888,10,Products,500,,线程组 1-342,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=银鹭花生牛奶&type=auto,10,0,1
+1732948758914,11,Products,500,,线程组 1-343,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=银鹭花生牛奶&type=auto,11,0,1
+1732948758940,16,Products,200,,线程组 1-344,text,true,,1316,253,1,1,http://192.168.9.198:8080/products?name=银鹭桂圆八宝粥&type=auto,16,0,1
+1732948758963,15,Products,200,,线程组 1-345,text,true,,2501,253,1,1,http://192.168.9.198:8080/products?name=银鹭八宝粥整件&type=auto,15,0,1
+1732948758988,16,Products,200,,线程组 1-346,text,true,,1304,282,1,1,http://192.168.9.198:8080/products?name=银鸽贴心系列卷纸10卷装&type=auto,16,0,1
+1732948759014,17,Products,200,,线程组 1-347,text,true,,1611,246,1,1,http://192.168.9.198:8080/products?name=银鸽柔萱10卷装&type=auto,17,0,1
+1732948759039,16,Products,200,,线程组 1-348,text,true,,991,217,1,1,http://192.168.9.198:8080/products?name=银耳花&type=auto,16,0,1
+1732948759064,16,Products,200,,线程组 1-349,text,true,,1604,235,1,1,http://192.168.9.198:8080/products?name=银江草菇老&type=auto,16,0,0
+1732948759088,16,Products,200,,线程组 1-350,text,true,,1021,283,1,1,http://192.168.9.198:8080/products?name=银桥草莓味酸奶百利包221&type=auto,16,0,1
+1732948759113,17,Products,200,,线程组 1-351,text,true,,2651,244,1,1,http://192.168.9.198:8080/products?name=铁师傅芝麻酱&type=auto,17,0,1
+1732948759139,16,Products,200,,线程组 1-352,text,true,,1657,256,1,1,http://192.168.9.198:8080/products?name=钱江牌可口脆瓜258&type=auto,16,0,1
+1732948759164,16,Products,200,,线程组 1-353,text,true,,2276,226,1,1,http://192.168.9.198:8080/products?name=钙博士糖&type=auto,16,0,1
+1732948759188,15,Products,200,,线程组 1-354,text,true,,1635,226,1,1,http://192.168.9.198:8080/products?name=鑫光竹筷&type=auto,15,0,0
+1732948759213,15,Products,200,,线程组 1-355,text,true,,1911,248,1,1,http://192.168.9.198:8080/products?name=金龙鱼调和油5000&type=auto,15,0,0
+1732948759239,17,Products,200,,线程组 1-356,text,true,,1462,249,1,1,http://192.168.9.198:8080/products?name=金龙鱼调和油18000&type=auto,17,0,1
+1732948759264,11,Products,500,,线程组 1-357,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=金龙鱼大豆油&type=auto,11,0,1
+1732948759289,10,Products,500,,线程组 1-358,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=金龙鱼大豆油&type=auto,10,0,0
+1732948759313,17,Products,200,,线程组 1-359,text,true,,1325,268,1,1,http://192.168.9.198:8080/products?name=金龙鱼AE营养菜籽油5000&type=auto,17,0,1
+1732948759338,16,Products,200,,线程组 1-360,text,true,,1626,248,1,1,http://192.168.9.198:8080/products?name=金龙鱼5000大豆油&type=auto,16,0,1
+1732948759364,16,Products,200,,线程组 1-361,text,true,,991,217,1,1,http://192.168.9.198:8080/products?name=金龙鱼&type=auto,16,0,1
+1732948759389,17,Products,200,,线程组 1-362,text,true,,1589,235,1,1,http://192.168.9.198:8080/products?name=金鸽西瓜子&type=auto,17,0,1
+1732948759413,15,Products,200,,线程组 1-363,text,true,,1648,235,1,1,http://192.168.9.198:8080/products?name=金鸽白瓜子&type=auto,15,0,1
+1732948759438,11,Products,500,,线程组 1-364,text,false,Test failed: code expected to contain /200/,253,226,1,1,http://192.168.9.198:8080/products?name=金鸽瓜子&type=auto,11,0,1
+1732948759464,11,Products,500,,线程组 1-365,text,false,Test failed: code expected to contain /200/,253,226,1,1,http://192.168.9.198:8080/products?name=金鸽瓜子&type=auto,10,0,1
+1732948759489,17,Products,200,,线程组 1-366,text,true,,2219,235,1,1,http://192.168.9.198:8080/products?name=金鸽煮瓜子&type=auto,17,0,1
+1732948759513,15,Products,200,,线程组 1-367,text,true,,2044,265,1,1,http://192.168.9.198:8080/products?name=金顺昌桂花白果糕150&type=auto,15,0,1
+1732948759538,16,Products,200,,线程组 1-368,text,true,,1969,265,1,1,http://192.168.9.198:8080/products?name=金顺昌壮乡桂圆糕150&type=auto,16,0,1
+1732948759564,16,Products,200,,线程组 1-369,text,true,,2085,253,1,1,http://192.168.9.198:8080/products?name=金雅蛋筒棉花糖&type=auto,16,0,1
+1732948759589,16,Products,200,,线程组 1-370,text,true,,1001,235,1,1,http://192.168.9.198:8080/products?name=金雅橡皮糖&type=auto,16,0,1
+1732948759614,15,Products,200,,线程组 1-371,text,true,,2346,235,1,1,http://192.168.9.198:8080/products?name=金雅喜之糖&type=auto,15,0,0
+1732948759638,15,Products,200,,线程组 1-372,text,true,,2403,226,1,1,http://192.168.9.198:8080/products?name=金雅之星&type=auto,15,0,0
+1732948759664,16,Products,200,,线程组 1-373,text,true,,1596,235,1,1,http://192.168.9.198:8080/products?name=金阳光烤肉&type=auto,16,0,1
+1732948759689,16,Products,200,,线程组 1-374,text,true,,1115,244,1,1,http://192.168.9.198:8080/products?name=金锣福火腿肠&type=auto,16,0,1
+1732948759714,15,Products,200,,线程组 1-375,text,true,,1323,253,1,1,http://192.168.9.198:8080/products?name=金银花去火牙膏&type=auto,15,0,0
+1732948759738,15,Products,200,,线程组 1-376,text,true,,1292,217,1,1,http://192.168.9.198:8080/products?name=金针菇&type=auto,15,0,1
+1732948759763,10,Products,500,,线程组 1-377,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=金逸香薰调理&type=auto,10,0,1
+1732948759789,17,Products,500,,线程组 1-378,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=金逸香薰调理&type=auto,16,0,1
+1732948759815,10,Products,500,,线程组 1-379,text,false,Test failed: code expected to contain /200/,253,244,1,1,http://192.168.9.198:8080/products?name=金逸香薰调理&type=auto,10,0,0
+1732948759838,16,Products,200,,线程组 1-380,text,true,,1604,253,1,1,http://192.168.9.198:8080/products?name=金赊店禮品盒酒&type=auto,16,0,1
+1732948759863,16,Products,200,,线程组 1-381,text,true,,1809,244,1,1,http://192.168.9.198:8080/products?name=金装婴儿奶粉&type=auto,16,0,1
+1732948759889,16,Products,200,,线程组 1-382,text,true,,2081,235,1,1,http://192.168.9.198:8080/products?name=金萱保湿霜&type=auto,16,0,1
+1732948759915,15,Products,200,,线程组 1-383,text,true,,1787,226,1,1,http://192.168.9.198:8080/products?name=金苑面粉&type=auto,15,0,1
+1732948759938,16,Products,200,,线程组 1-384,text,true,,1611,253,1,1,http://192.168.9.198:8080/products?name=金苑精特龙须面&type=auto,16,0,1
+1732948759963,16,Products,200,,线程组 1-385,text,true,,2077,235,1,1,http://192.168.9.198:8080/products?name=金苑特一粉&type=auto,16,0,1
+1732948759989,17,Products,200,,线程组 1-386,text,true,,1609,255,1,1,http://192.168.9.198:8080/products?name=金苑20斤精制面粉&type=auto,17,0,1
+1732948760014,16,Products,200,,线程组 1-387,text,true,,1501,334,1,1,http://192.168.9.198:8080/products?name=金纺衣物护理剂（牛奶蝴蝶兰香型）&type=auto,16,0,1
+1732948760038,16,Products,200,,线程组 1-388,text,true,,1614,244,1,1,http://192.168.9.198:8080/products?name=金稻谷米果棒&type=auto,15,0,0
+1732948760063,16,Products,200,,线程组 1-389,text,true,,1307,246,1,1,http://192.168.9.198:8080/products?name=金白象方便面97&type=auto,16,0,1
+1732948760089,16,Products,200,,线程组 1-390,text,true,,1606,226,1,1,http://192.168.9.198:8080/products?name=金沱福酒&type=auto,16,0,1
+1732948760116,16,Products,200,,线程组 1-391,text,true,,1304,244,1,1,http://192.168.9.198:8080/products?name=金峻日太空杯&type=auto,16,0,1
+1732948760140,15,Products,200,,线程组 1-392,text,true,,2275,265,1,1,http://192.168.9.198:8080/products?name=金娃酒杯果肉果冻125&type=auto,15,0,0
+1732948760163,17,Products,200,,线程组 1-393,text,true,,1773,248,1,1,http://192.168.9.198:8080/products?name=金娃维C果冻爽130&type=auto,17,0,1
+1732948760188,17,Products,200,,线程组 1-394,text,true,,1325,250,1,1,http://192.168.9.198:8080/products?name=金娃维C果冻爽(150)&type=auto,16,0,1
+1732948760214,18,Products,200,,线程组 1-395,text,true,,997,266,1,1,http://192.168.9.198:8080/products?name=金娃玩具书包（1540）&type=auto,18,0,1
+1732948760239,15,Products,200,,线程组 1-396,text,true,,1625,238,1,1,http://192.168.9.198:8080/products?name=金娃水果冻150&type=auto,15,0,1
+1732948760264,16,Products,200,,线程组 1-397,text,true,,1321,229,1,1,http://192.168.9.198:8080/products?name=金娃果冻158&type=auto,16,0,1
+1732948760289,15,Products,200,,线程组 1-398,text,true,,2223,274,1,1,http://192.168.9.198:8080/products?name=金娃小手雷可吸果冻130&type=auto,15,0,1
+1732948760314,16,Products,200,,线程组 1-399,text,true,,1633,241,1,1,http://192.168.9.198:8080/products?name=金奖白兰地%20700&type=auto,16,0,1
+1732948760339,15,Products,200,,线程组 1-400,text,true,,1626,235,1,1,http://192.168.9.198:8080/products?name=金太阳锅巴&type=auto,15,0,0
