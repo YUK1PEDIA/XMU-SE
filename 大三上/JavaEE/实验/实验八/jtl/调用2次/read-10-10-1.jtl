@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1734951590844,81,Products,400,,线程组 1-1,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/2255?type=shop_template,77,0,17
+1734951591762,53,Products,400,,线程组 1-2,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/4379?type=shop_template,53,0,1
+1734951592757,74,Products,200,,线程组 1-3,text,true,,616,198,1,1,http://192.168.9.198:8080/products/3143?type=shop_template,74,0,1
+1734951593747,34,Products,400,,线程组 1-4,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/3877?type=shop_template,34,0,1
+1734951594743,54,Products,400,,线程组 1-5,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/4520?type=shop_template,54,0,2
+1734951595734,48,Products,200,,线程组 1-6,text,true,,622,198,1,1,http://192.168.9.198:8080/products/3564?type=shop_template,48,0,1
+1734951596735,71,Products,200,,线程组 1-7,text,true,,621,198,1,1,http://192.168.9.198:8080/products/5073?type=shop_template,71,0,2
+1734951597736,37,Products,400,,线程组 1-8,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/4805?type=shop_template,37,0,1
+1734951598731,53,Products,400,,线程组 1-9,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/1656?type=shop_template,53,0,2
+1734951599733,51,Products,400,,线程组 1-10,text,false,Test failed: code expected to contain /200/,330,198,1,1,http://192.168.9.198:8080/products/2801?type=shop_template,50,0,1

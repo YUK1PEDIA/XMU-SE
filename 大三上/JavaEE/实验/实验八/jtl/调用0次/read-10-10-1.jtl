@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1734949306254,80,Products,200,,线程组 1-1,text,true,,603,179,1,1,http://192.168.9.198:8080/products/3547,77,0,16
+1734949307191,41,Products,200,,线程组 1-2,text,true,,615,179,1,1,http://192.168.9.198:8080/products/2837,41,0,2
+1734949308192,57,Products,200,,线程组 1-3,text,true,,593,179,1,1,http://192.168.9.198:8080/products/2484,57,0,1
+1734949309182,48,Products,200,,线程组 1-4,text,true,,608,179,1,1,http://192.168.9.198:8080/products/4977,48,0,1
+1734949310186,41,Products,200,,线程组 1-5,text,true,,626,179,1,1,http://192.168.9.198:8080/products/5384,40,0,1
+1734949311185,34,Products,200,,线程组 1-6,text,true,,603,179,1,1,http://192.168.9.198:8080/products/2602,34,0,1
+1734949312189,32,Products,200,,线程组 1-7,text,true,,607,179,1,1,http://192.168.9.198:8080/products/4949,32,0,1
+1734949313178,50,Products,200,,线程组 1-8,text,true,,608,179,1,1,http://192.168.9.198:8080/products/2134,49,0,1
+1734949314163,32,Products,200,,线程组 1-9,text,true,,629,179,1,1,http://192.168.9.198:8080/products/4288,32,0,1
+1734949315165,50,Products,200,,线程组 1-10,text,true,,603,179,1,1,http://192.168.9.198:8080/products/4756,50,0,1
