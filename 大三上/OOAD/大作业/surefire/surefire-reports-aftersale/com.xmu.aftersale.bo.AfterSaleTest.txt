@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.xmu.aftersale.bo.AfterSaleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.100 s -- in com.xmu.aftersale.bo.AfterSaleTest

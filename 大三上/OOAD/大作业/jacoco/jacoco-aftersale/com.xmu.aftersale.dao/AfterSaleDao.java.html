@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AfterSaleDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aftersale</a> &gt; <a href="index.source.html" class="el_package">com.xmu.aftersale.dao</a> &gt; <span class="el_source">AfterSaleDao.java</span></div><h1>AfterSaleDao.java</h1><pre class="source lang-java linenums">package com.xmu.aftersale.dao;
+
+import com.xmu.aftersale.controller.dto.AfterSalesConfirmDto;
+import com.xmu.aftersale.controller.dto.EditAfterSaleDto;
+import com.xmu.aftersale.dao.bo.AfterSale;
+import com.xmu.aftersale.mapper.jpa.AfterSalePoMapper;
+import com.xmu.aftersale.mapper.po.AfterSalePo;
+import com.xmu.aftersale.util.CloneFactory;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@RefreshScope
+<span class="fc" id="L17">@Slf4j</span>
+@Repository
+<span class="fc" id="L19">public class AfterSaleDao {</span>
+
+    @Autowired
+    private AfterSalePoMapper afterSalePoMapper;
+    @Autowired
+    private AfterSale afterSale;
+
+    /**
+     * 根据售后 id 查找售后单对象
+     * @param afterSaleId
+     * @return
+     */
+    public AfterSale findAfterSaleById(Long afterSaleId) {
+<span class="fc" id="L32">        Optional&lt;AfterSalePo&gt; afterSalePoOptional = afterSalePoMapper.findById(afterSaleId);</span>
+
+        // 检查 Optional 是否有值
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        if (afterSalePoOptional.isPresent()) {</span>
+<span class="fc" id="L36">            AfterSalePo afterSalePo = afterSalePoOptional.get();</span>
+<span class="fc" id="L37">            AfterSale afterSale = new AfterSale();</span>
+<span class="fc" id="L38">            CloneFactory.copy(afterSalePo, afterSale);</span>
+<span class="fc" id="L39">            return afterSale;</span>
+        } else {
+<span class="fc" id="L41">            throw new RuntimeException(&quot;AfterSale with ID &quot; + afterSaleId + &quot; not found.&quot;);</span>
+        }
+    }
+
+    /**
+     * 更新售后单状态
+     * @param confirm
+     * @param afterSaleId
+     */
+    public void updateStatus(Boolean confirm, Long afterSaleId) {
+<span class="fc" id="L51">        Optional&lt;AfterSalePo&gt; afterSalePoOptional = afterSalePoMapper.findById(afterSaleId);</span>
+
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        if (afterSalePoOptional.isPresent()) {</span>
+<span class="fc" id="L54">            AfterSalePo afterSalePo = afterSalePoOptional.get();</span>
+            // 审核不通过，直接更改服务单状态
+<span class="fc bfc" id="L56" title="All 2 branches covered.">            if (Boolean.FALSE.equals(confirm)) {</span>
+<span class="fc" id="L57">                afterSalePo.setStatus((byte) 0);</span>
+            } else { // 售后类型是服务，直接更改服务单状态为有效
+<span class="fc" id="L59">                afterSalePo.setStatus((byte) 1);</span>
+            }
+<span class="fc" id="L61">        } else {</span>
+<span class="fc" id="L62">            throw new RuntimeException(&quot;AfterSale with ID &quot; + afterSaleId + &quot; not found.&quot;);</span>
+        }
+<span class="fc" id="L64">    }</span>
+
+    /**
+     * 更新售后单信息
+     * @param editAfterSaleDto
+     * @param afterSaleId
+     */
+    public void updateAfterSaleInfo(EditAfterSaleDto editAfterSaleDto, Long afterSaleId) {
+        // 首先获取到前端传来的修改信息
+<span class="fc" id="L73">        String address = editAfterSaleDto.getAddress();</span>
+<span class="fc" id="L74">        String reason = editAfterSaleDto.getReason();</span>
+<span class="fc" id="L75">        String contact = editAfterSaleDto.getContact();</span>
+<span class="fc" id="L76">        String mobile = editAfterSaleDto.getMobile();</span>
+
+<span class="fc" id="L78">        Optional&lt;AfterSalePo&gt; afterSalePoOptional = afterSalePoMapper.findById(afterSaleId);</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        if (afterSalePoOptional.isPresent()) {</span>
+<span class="fc" id="L80">            AfterSalePo afterSalePo = afterSalePoOptional.get();</span>
+<span class="fc" id="L81">            afterSalePo.setAddress(address);</span>
+<span class="fc" id="L82">            afterSalePo.setReason(reason);</span>
+<span class="fc" id="L83">            afterSalePo.setContact(contact);</span>
+<span class="fc" id="L84">            afterSalePo.setMobile(mobile);</span>
+<span class="fc" id="L85">            afterSalePoMapper.save(afterSalePo);</span>
+<span class="fc" id="L86">        } else {</span>
+<span class="fc" id="L87">            throw new RuntimeException(&quot;AfterSale with ID &quot; + afterSaleId + &quot; not found.&quot;);</span>
+        }
+<span class="fc" id="L89">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

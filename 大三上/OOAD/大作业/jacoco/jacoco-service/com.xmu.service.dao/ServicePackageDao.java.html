@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ServicePackageDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">service</a> &gt; <a href="index.source.html" class="el_package">com.xmu.service.dao</a> &gt; <span class="el_source">ServicePackageDao.java</span></div><h1>ServicePackageDao.java</h1><pre class="source lang-java linenums">package com.xmu.service.dao;
+
+import com.xmu.service.dao.bo.ServicePackage;
+import com.xmu.service.mapper.jpa.ServicePackageMapper;
+import com.xmu.service.mapper.po.ServicePackagePo;
+import com.xmu.service.util.CloneFactory;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@RefreshScope
+<span class="fc" id="L15">@Slf4j</span>
+@Repository
+<span class="fc" id="L17">public class ServicePackageDao {</span>
+
+    @Autowired
+    private ServicePackageMapper servicePackageMapper;
+
+    /**
+     * 根据 id 查找运单
+     * @param serviceOrderId
+     * @return
+     */
+    public ServicePackage findServicePackageByServiceOrderId(Long serviceOrderId) {
+<span class="fc" id="L28">        Optional&lt;ServicePackagePo&gt; servicePackagePoOptional = servicePackageMapper.findByServiceOrderId(serviceOrderId);</span>
+
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (servicePackagePoOptional.isPresent()) {</span>
+<span class="fc" id="L31">            ServicePackagePo servicePackagePo = servicePackagePoOptional.get(); // 从 Optional 中获取实际对象</span>
+<span class="fc" id="L32">            ServicePackage servicePackage = new ServicePackage();</span>
+<span class="fc" id="L33">            CloneFactory.copy(servicePackagePo, servicePackage);</span>
+<span class="fc" id="L34">            return servicePackage;</span>
+        } else {
+<span class="fc" id="L36">            return null;</span>
+        }
+    }
+
+    /**
+     * 创建运单
+     * @param serviceOrderId
+     */
+    public void createServicePackage(Long serviceOrderId) {
+<span class="fc" id="L45">        ServicePackagePo servicePackagePo = new ServicePackagePo();</span>
+<span class="fc" id="L46">        servicePackagePo.setType((byte) 1); // 设置运单类型为寄件</span>
+<span class="fc" id="L47">        servicePackagePo.setServiceOrderId(serviceOrderId); // 设置运单对应的服务单 id</span>
+<span class="fc" id="L48">        servicePackageMapper.save(servicePackagePo);</span>
+<span class="fc" id="L49">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

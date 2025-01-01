@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ServicePo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">service</a> &gt; <a href="index.source.html" class="el_package">com.xmu.service.mapper.po</a> &gt; <span class="el_source">ServicePo.java</span></div><h1>ServicePo.java</h1><pre class="source lang-java linenums">package com.xmu.service.mapper.po;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+import jakarta.persistence.*;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = &quot;service&quot;)
+@AllArgsConstructor
+@NoArgsConstructor
+public class ServicePo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private Integer productId;
+
+    private Integer shopId;
+
+    private String name;
+
+    private String description;
+
+    private String serviceType;
+
+    public Long getId() {
+<span class="fc" id="L30">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="nc" id="L34">        this.id = id;</span>
+<span class="nc" id="L35">    }</span>
+
+    public Integer getProductId() {
+<span class="nc" id="L38">        return productId;</span>
+    }
+
+    public void setProductId(Integer productId) {
+<span class="nc" id="L42">        this.productId = productId;</span>
+<span class="nc" id="L43">    }</span>
+
+    public Integer getShopId() {
+<span class="nc" id="L46">        return shopId;</span>
+    }
+
+    public void setShopId(Integer shopId) {
+<span class="nc" id="L50">        this.shopId = shopId;</span>
+<span class="nc" id="L51">    }</span>
+
+    public String getName() {
+<span class="fc" id="L54">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="fc" id="L58">        this.name = name;</span>
+<span class="fc" id="L59">    }</span>
+
+    public String getDescription() {
+<span class="fc" id="L62">        return description;</span>
+    }
+
+    public void setDescription(String description) {
+<span class="nc" id="L66">        this.description = description;</span>
+<span class="nc" id="L67">    }</span>
+
+    public String getServiceType() {
+<span class="fc" id="L70">        return serviceType;</span>
+    }
+
+    public void setServiceType(String serviceType) {
+<span class="nc" id="L74">        this.serviceType = serviceType;</span>
+<span class="nc" id="L75">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

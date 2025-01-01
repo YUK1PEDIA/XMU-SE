@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EditAfterSaleController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aftersale</a> &gt; <a href="index.source.html" class="el_package">com.xmu.aftersale.controller</a> &gt; <span class="el_source">EditAfterSaleController.java</span></div><h1>EditAfterSaleController.java</h1><pre class="source lang-java linenums">package com.xmu.aftersale.controller;
+
+import cn.edu.xmu.javaee.core.model.ReturnNo;
+import cn.edu.xmu.javaee.core.model.ReturnObject;
+import com.xmu.aftersale.controller.dto.EditAfterSaleDto;
+import com.xmu.aftersale.service.AfterSaleService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping
+<span class="fc" id="L15">@Slf4j</span>
+public class EditAfterSaleController {
+
+    @Autowired
+    private AfterSaleService afterSaleService;
+
+    @PutMapping(&quot;/aftersales/{id}&quot;)
+    public ReturnObject updateAfterSale(@PathVariable(&quot;id&quot;) Long id,
+                                        @RequestBody EditAfterSaleDto editAfterSaleDto) {
+<span class="fc" id="L24">        Boolean ok = afterSaleService.updateAfterSale(id, editAfterSaleDto);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">        if (Boolean.TRUE.equals(ok)) {</span>
+<span class="fc" id="L26">            return new ReturnObject(ReturnNo.OK);</span>
+        }
+<span class="fc" id="L28">        return new ReturnObject(ReturnNo.HAS_BEEN_REVIEWED);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

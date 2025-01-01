@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ShopServiceController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">service</a> &gt; <a href="index.source.html" class="el_package">com.xmu.service.controller</a> &gt; <span class="el_source">ShopServiceController.java</span></div><h1>ShopServiceController.java</h1><pre class="source lang-java linenums">package com.xmu.service.controller;
+
+import cn.edu.xmu.javaee.core.aop.LoginUser;
+import cn.edu.xmu.javaee.core.model.ReturnNo;
+import cn.edu.xmu.javaee.core.model.ReturnObject;
+import cn.edu.xmu.javaee.core.model.dto.UserDto;
+import com.xmu.service.controller.dto.ServiceContractDto;
+import com.xmu.service.service.ServiceOrderService;
+import com.xmu.service.service.ServiceService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequiredArgsConstructor
+@RequestMapping(value = &quot;/shops/{shopId}&quot;, produces = &quot;application/json;charset=UTF-8&quot;)
+<span class="fc" id="L18">@Slf4j</span>
+public class ShopServiceController {
+
+    @Autowired
+    private ServiceService serviceService;
+    @Autowired
+    private ServiceOrderService serviceOrderService;
+
+    /**
+     * 定义服务合同
+     * @param shopId
+     * @param id
+     * @param dto
+     * @return
+     */
+    @PostMapping(&quot;/service/{id}/createContract&quot;)
+    public ReturnObject createContract(@PathVariable(&quot;shopId&quot;) Long shopId,
+                                       @PathVariable(&quot;id&quot;) Long id, // 服务 id
+                                       @RequestBody ServiceContractDto dto
+                                       /*@LoginUser UserDto user*/) {
+<span class="fc" id="L38">        serviceService.createContract(id, dto, shopId);</span>
+<span class="fc" id="L39">        return new ReturnObject(ReturnNo.CREATED);</span>
+    }
+
+    /**
+     * 取消服务单
+     * @param shopId
+     * @param id
+     * @return
+     */
+    @DeleteMapping(&quot;/service/{id}&quot;)
+    public ReturnObject cancelServiceOrder(@PathVariable(&quot;shopId&quot;) Long shopId,
+                                           @PathVariable(&quot;id&quot;) Long id
+                                           /*@LoginUser UserDto user*/) { // 服务 id
+<span class="fc" id="L52">        serviceOrderService.cancelService(id);</span>
+<span class="fc" id="L53">        return new ReturnObject(ReturnNo.OK);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

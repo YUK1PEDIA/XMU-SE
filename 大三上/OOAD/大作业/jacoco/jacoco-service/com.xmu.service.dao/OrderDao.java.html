@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrderDao.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">service</a> &gt; <a href="index.source.html" class="el_package">com.xmu.service.dao</a> &gt; <span class="el_source">OrderDao.java</span></div><h1>OrderDao.java</h1><pre class="source lang-java linenums">package com.xmu.service.dao;
+
+import com.xmu.service.dao.bo.ServiceProdOrder;
+import com.xmu.service.mapper.jpa.ServiceProdOrderMapper;
+import com.xmu.service.mapper.po.ServiceProdOrderPo;
+import com.xmu.service.util.CloneFactory;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.stereotype.Repository;
+
+@RefreshScope
+<span class="fc" id="L13">@Slf4j</span>
+@Repository
+<span class="fc" id="L15">public class OrderDao {</span>
+
+    @Autowired
+    private ServiceProdOrderMapper serviceProdOrderMapper;
+
+    /**
+     * 创建订单
+     * @param serviceProdOrder
+     */
+    public void createOrder(ServiceProdOrder serviceProdOrder) {
+<span class="fc" id="L25">        ServiceProdOrderPo serviceProdOrderPo = new ServiceProdOrderPo();</span>
+<span class="fc" id="L26">        CloneFactory.copy(serviceProdOrder, serviceProdOrderPo);</span>
+<span class="fc" id="L27">        serviceProdOrderMapper.save(serviceProdOrderPo);</span>
+<span class="fc" id="L28">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

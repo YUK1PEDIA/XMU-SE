@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AfterSaleFactory.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aftersale</a> &gt; <a href="index.source.html" class="el_package">com.xmu.aftersale.util</a> &gt; <span class="el_source">AfterSaleFactory.java</span></div><h1>AfterSaleFactory.java</h1><pre class="source lang-java linenums">package com.xmu.aftersale.util;
+
+import com.xmu.aftersale.dao.bo.AfterSaleHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.Map;
+
+@Component
+public class AfterSaleFactory {
+    private final Map&lt;Byte, AfterSaleHandler&gt; afterSaleHandlerMap;
+
+    /**
+     * 构造函数注入，初始化处理器映射表
+     * @param afterSaleHandlerMap
+     */
+    @Autowired
+<span class="nc" id="L18">    public AfterSaleFactory(Map&lt;String, AfterSaleHandler&gt; afterSaleHandlerMap) {</span>
+<span class="nc" id="L19">        this.afterSaleHandlerMap = Map.of(</span>
+<span class="nc" id="L20">                (byte) 1, afterSaleHandlerMap.get(&quot;refundAfterSale&quot;),</span>
+<span class="nc" id="L21">                (byte) 2, afterSaleHandlerMap.get(&quot;replaceAfterSale&quot;)</span>
+        );
+<span class="nc" id="L23">    }</span>
+
+    /**
+     * 根据售后类型获取具体的售后实例
+     *
+     * @param type 售后类型
+     * @return 售后实例
+     */
+    public AfterSaleHandler getAfterSaleHandler(Byte type) {
+<span class="nc" id="L32">        AfterSaleHandler afterSaleHandler = afterSaleHandlerMap.get(type);</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (afterSaleHandler == null) {</span>
+<span class="nc" id="L34">            throw new IllegalArgumentException(&quot;未知的售后类型：&quot; + type);</span>
+        }
+<span class="nc" id="L36">        return afterSaleHandler;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

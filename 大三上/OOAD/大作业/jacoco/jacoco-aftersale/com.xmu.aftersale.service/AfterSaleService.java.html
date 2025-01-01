@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AfterSaleService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aftersale</a> &gt; <a href="index.source.html" class="el_package">com.xmu.aftersale.service</a> &gt; <span class="el_source">AfterSaleService.java</span></div><h1>AfterSaleService.java</h1><pre class="source lang-java linenums">package com.xmu.aftersale.service;
+
+import com.xmu.aftersale.controller.dto.AfterSalesConfirmDto;
+import com.xmu.aftersale.controller.dto.EditAfterSaleDto;
+import com.xmu.aftersale.dao.AfterSaleDao;
+import com.xmu.aftersale.dao.bo.AfterSale;
+import com.xmu.aftersale.dao.bo.AfterSaleHandler;
+import com.xmu.aftersale.util.AfterSaleFactory;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.annotation.After;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+@Service
+@Transactional(propagation = Propagation.REQUIRED)
+@RequiredArgsConstructor // 自动生成构造函数
+<span class="fc" id="L19">@Slf4j</span>
+public class AfterSaleService {
+
+    private final AfterSaleDao afterSaleDao;
+    private final AfterSaleFactory afterSaleFactory;
+    private final AfterSale afterSale;
+
+    /**
+     * 审核售后单
+     * @param afterSaleId
+     * @param afterSalesConfirmDto
+     */
+    public void reviewAfterSale(Long afterSaleId, AfterSalesConfirmDto afterSalesConfirmDto) {
+        // 首先通过 afterSaleDao 将售后单查出来
+<span class="fc" id="L33">        AfterSale afterSale = afterSaleDao.findAfterSaleById(afterSaleId);</span>
+
+        // 审核通过或者不通过
+<span class="fc" id="L36">        Boolean confirm = afterSalesConfirmDto.getConfirm();</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (Boolean.FALSE.equals(confirm)) { // 管理员审核不通过</span>
+<span class="fc" id="L38">            afterSaleDao.updateStatus(confirm, afterSaleId);</span>
+        } else { // 管理员审核通过
+            // 获取服务单类型，0 表示服务、1 表示维修、2 表示换货
+<span class="fc" id="L41">            Byte type = afterSale.getType();</span>
+<span class="fc bfc" id="L42" title="All 2 branches covered.">            if (type == 0) { // 售后是服务类型，直接更新订单状态</span>
+<span class="fc" id="L43">                afterSaleDao.updateStatus(confirm, afterSaleId);</span>
+<span class="pc bpc" id="L44" title="1 of 4 branches missed.">            } else if (type == 1 || type == 2) { // 售后是退款类型或者换货类型，需要产生运单</span>
+                // 将产生新运单的职责分配给 AfterSale 对象，通过工厂获取指定对象
+<span class="fc" id="L46">                AfterSaleHandler afterSaleHandler = afterSaleFactory.getAfterSaleHandler(type);</span>
+<span class="fc" id="L47">                afterSaleHandler.reviewAfterSale(afterSaleId);</span>
+            }
+        }
+<span class="fc" id="L50">    }</span>
+
+    /**
+     * 修改售后单信息
+     * @param afterSaleId
+     * @param editAfterSaleDto
+     */
+    public Boolean updateAfterSale(Long afterSaleId, EditAfterSaleDto editAfterSaleDto) {
+<span class="fc" id="L58">        AfterSale afterSale = afterSaleDao.findAfterSaleById(afterSaleId);</span>
+
+        // 首先判断售后单状态是否为待审核，0 待审核；1 已审核
+<span class="fc" id="L61">        Byte status = afterSale.getStatus();</span>
+        // 售后单已审核，不能修改
+<span class="fc bfc" id="L63" title="All 2 branches covered.">        if (status == 1) {</span>
+<span class="fc" id="L64">            return false;</span>
+        }
+        // 售后单未审核，可以修改
+<span class="fc" id="L67">        afterSale.update(editAfterSaleDto, afterSaleId);</span>
+<span class="fc" id="L68">        return true;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

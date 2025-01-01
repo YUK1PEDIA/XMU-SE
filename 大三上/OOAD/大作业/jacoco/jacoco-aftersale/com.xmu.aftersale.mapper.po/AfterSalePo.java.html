@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AfterSalePo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">aftersale</a> &gt; <a href="index.source.html" class="el_package">com.xmu.aftersale.mapper.po</a> &gt; <span class="el_source">AfterSalePo.java</span></div><h1>AfterSalePo.java</h1><pre class="source lang-java linenums">package com.xmu.aftersale.mapper.po;
+
+import lombok.Data;
+import jakarta.persistence.*;
+import java.io.Serializable;
+
+@Data
+@Entity
+@Table(name = &quot;aftersale&quot;)
+public class AfterSalePo implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = &quot;shop_id&quot;, nullable = false)
+    private Integer shopId;
+
+    @Column(name = &quot;aftersale_sn&quot;, length = 255)
+    private String aftersaleSn;
+
+    @Column(name = &quot;type&quot;, nullable = false)
+    private Byte type;
+
+    @Column(name = &quot;reason&quot;, columnDefinition = &quot;TEXT&quot;)
+    private String reason;
+
+    @Column(name = &quot;conclusion&quot;, columnDefinition = &quot;TEXT&quot;)
+    private String conclusion;
+
+    @Column(name = &quot;quantity&quot;, nullable = false)
+    private Integer quantity;
+
+    @Column(name = &quot;region_id&quot;, length = 255)
+    private String regionId;
+
+    @Column(name = &quot;address&quot;, length = 255)
+    private String address;
+
+    @Column(name = &quot;contact&quot;, length = 255)
+    private String contact;
+
+    @Column(name = &quot;mobile&quot;, length = 15)
+    private String mobile;
+
+    @Column(name = &quot;status&quot;, nullable = false)
+    private Byte status;
+
+    @Column(name = &quot;in_arbitrated&quot;)
+    private Byte inArbitrated;
+
+    @Column(name = &quot;product_id&quot;, nullable = false)
+    private Integer productId;
+
+    @Column(name = &quot;order_id&quot;, nullable = false)
+    private Long orderId;
+
+    @Column(name = &quot;name&quot;, length = 255)
+    private String name;
+
+    @Column(name = &quot;service_id&quot;, nullable = false)
+    private Integer serviceId;
+
+    @Column(name = &quot;serial_no&quot;, length = 255)
+    private String serialNo;
+
+    @Column(name = &quot;customer_id&quot;, nullable = false)
+    private Integer customerId;
+
+    public Long getId() {
+<span class="nc" id="L71">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="fc" id="L75">        this.id = id;</span>
+<span class="fc" id="L76">    }</span>
+
+    public Integer getShopId() {
+<span class="nc" id="L79">        return shopId;</span>
+    }
+
+    public void setShopId(Integer shopId) {
+<span class="nc" id="L83">        this.shopId = shopId;</span>
+<span class="nc" id="L84">    }</span>
+
+    public String getAftersaleSn() {
+<span class="nc" id="L87">        return aftersaleSn;</span>
+    }
+
+    public void setAftersaleSn(String aftersaleSn) {
+<span class="nc" id="L91">        this.aftersaleSn = aftersaleSn;</span>
+<span class="nc" id="L92">    }</span>
+
+    public Byte getType() {
+<span class="fc" id="L95">        return type;</span>
+    }
+
+    public void setType(Byte type) {
+<span class="fc" id="L99">        this.type = type;</span>
+<span class="fc" id="L100">    }</span>
+
+    public String getReason() {
+<span class="fc" id="L103">        return reason;</span>
+    }
+
+    public void setReason(String reason) {
+<span class="fc" id="L107">        this.reason = reason;</span>
+<span class="fc" id="L108">    }</span>
+
+    public String getConclusion() {
+<span class="nc" id="L111">        return conclusion;</span>
+    }
+
+    public void setConclusion(String conclusion) {
+<span class="nc" id="L115">        this.conclusion = conclusion;</span>
+<span class="nc" id="L116">    }</span>
+
+    public Integer getQuantity() {
+<span class="nc" id="L119">        return quantity;</span>
+    }
+
+    public void setQuantity(Integer quantity) {
+<span class="nc" id="L123">        this.quantity = quantity;</span>
+<span class="nc" id="L124">    }</span>
+
+    public String getRegionId() {
+<span class="nc" id="L127">        return regionId;</span>
+    }
+
+    public void setRegionId(String regionId) {
+<span class="nc" id="L131">        this.regionId = regionId;</span>
+<span class="nc" id="L132">    }</span>
+
+    public String getAddress() {
+<span class="fc" id="L135">        return address;</span>
+    }
+
+    public void setAddress(String address) {
+<span class="fc" id="L139">        this.address = address;</span>
+<span class="fc" id="L140">    }</span>
+
+    public String getContact() {
+<span class="fc" id="L143">        return contact;</span>
+    }
+
+    public void setContact(String contact) {
+<span class="fc" id="L147">        this.contact = contact;</span>
+<span class="fc" id="L148">    }</span>
+
+    public String getMobile() {
+<span class="fc" id="L151">        return mobile;</span>
+    }
+
+    public void setMobile(String mobile) {
+<span class="fc" id="L155">        this.mobile = mobile;</span>
+<span class="fc" id="L156">    }</span>
+
+    public Byte getStatus() {
+<span class="fc" id="L159">        return status;</span>
+    }
+
+    public void setStatus(Byte status) {
+<span class="fc" id="L163">        this.status = status;</span>
+<span class="fc" id="L164">    }</span>
+
+    public Byte getInArbitrated() {
+<span class="nc" id="L167">        return inArbitrated;</span>
+    }
+
+    public void setInArbitrated(Byte inArbitrated) {
+<span class="nc" id="L171">        this.inArbitrated = inArbitrated;</span>
+<span class="nc" id="L172">    }</span>
+
+    public Integer getProductId() {
+<span class="nc" id="L175">        return productId;</span>
+    }
+
+    public void setProductId(Integer productId) {
+<span class="nc" id="L179">        this.productId = productId;</span>
+<span class="nc" id="L180">    }</span>
+
+    public Long getOrderId() {
+<span class="fc" id="L183">        return orderId;</span>
+    }
+
+    public void setOrderId(Long orderId) {
+<span class="nc" id="L187">        this.orderId = orderId;</span>
+<span class="nc" id="L188">    }</span>
+
+    public String getName() {
+<span class="nc" id="L191">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="nc" id="L195">        this.name = name;</span>
+<span class="nc" id="L196">    }</span>
+
+    public Integer getServiceId() {
+<span class="nc" id="L199">        return serviceId;</span>
+    }
+
+    public void setServiceId(Integer serviceId) {
+<span class="nc" id="L203">        this.serviceId = serviceId;</span>
+<span class="nc" id="L204">    }</span>
+
+    public String getSerialNo() {
+<span class="nc" id="L207">        return serialNo;</span>
+    }
+
+    public void setSerialNo(String serialNo) {
+<span class="nc" id="L211">        this.serialNo = serialNo;</span>
+<span class="nc" id="L212">    }</span>
+
+    public Integer getCustomerId() {
+<span class="nc" id="L215">        return customerId;</span>
+    }
+
+    public void setCustomerId(Integer customerId) {
+<span class="nc" id="L219">        this.customerId = customerId;</span>
+<span class="nc" id="L220">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

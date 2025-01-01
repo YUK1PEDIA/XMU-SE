@@ -1,0 +1,16 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+aftersale,com.xmu.aftersale.dao,AfterSaleDao,0,116,0,8,0,33,0,9,0,5
+aftersale,com.xmu.aftersale.dao,AfterSalePackageDao,0,31,0,0,0,9,0,3,0,3
+aftersale,com.xmu.aftersale.mapper.po,AfterSalePo,84,49,0,0,36,21,24,14,24,14
+aftersale,com.xmu.aftersale.mapper.po,AfterSalePackagePo,21,21,0,0,9,9,6,6,6,6
+aftersale,com.xmu.aftersale.mapper.po,AfterSaleOrderPo,28,0,0,0,12,0,8,0,8,0
+aftersale,com.xmu.aftersale,AftersaleApplication,5,3,0,0,2,1,1,1,1,1
+aftersale,com.xmu.aftersale.service,AfterSaleService,0,73,1,9,0,18,1,7,0,3
+aftersale,com.xmu.aftersale.util,CloneFactory,27,20,6,2,7,6,5,2,1,2
+aftersale,com.xmu.aftersale.util,AfterSaleFactory,34,0,2,0,9,0,3,0,2,0
+aftersale,com.xmu.aftersale.dao.bo,RefundAfterSaleHandler,0,10,0,0,0,3,0,2,0,2
+aftersale,com.xmu.aftersale.dao.bo,AfterSaleHandler,0,3,0,0,0,1,0,1,0,1
+aftersale,com.xmu.aftersale.dao.bo,AfterSale,0,6,0,0,0,2,0,1,0,1
+aftersale,com.xmu.aftersale.dao.bo,ReplaceAfterSaleHandler,0,10,0,0,0,3,0,2,0,2
+aftersale,com.xmu.aftersale.controller,EditAfterSaleController,0,24,0,2,0,5,0,3,0,2
+aftersale,com.xmu.aftersale.controller,AfterSaleController,0,14,0,0,0,3,0,2,0,2
