@@ -1,0 +1,9 @@
+const MAX = 10;
+var a, b, result;
+
+begin
+    a := 5;
+    b := 3;
+    result := a + b * MAX;
+    write result
+end.
