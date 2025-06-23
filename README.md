@@ -4,4 +4,4 @@
 - 包含比较难留存下来的部分专业课期中真题
 - QQ：904255490，欢迎交流
 - 此仓库于 2025 年 6 月 22 日停止维护
-- 我的博客：[https://yuk1pedia.github.io/](https://yukipedia.cn/)
+- 我的博客：[https://yukipedia.cn/](https://yukipedia.cn/)
